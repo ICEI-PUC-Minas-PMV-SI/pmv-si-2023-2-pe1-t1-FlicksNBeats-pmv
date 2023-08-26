@@ -14,13 +14,13 @@ Afim de solucionar o problema de desorganização e a dificuldade em se escolher
 
 ## Objetivos
 
-Centralização e Acessibilidade: O principal objetivo é estabelecer uma plataforma que concentre uma vasta gama de conteúdo audiovisual, simplificando o acesso e a busca por filmes, séries e músicas.
+**Centralização e Acessibilidade:** O principal objetivo é estabelecer uma plataforma que concentre uma vasta gama de conteúdo audiovisual, simplificando o acesso e a busca por filmes, séries e músicas.
 
-Personalização e Recomendações: Desenvolver algoritmos inteligentes de recomendação que compreendam as preferências individuais dos usuários e sugiram conteúdo relevante, aprimorando a experiência personalizada.
+**Personalização e Recomendações:** Desenvolver algoritmos inteligentes de recomendação que compreendam as preferências individuais dos usuários e sugiram conteúdo relevante, aprimorando a experiência personalizada.
 
-Interação Social: Incentivar a interatividade entre os usuários, permitindo que compartilhem sugestões, playlists e comentários sobre o conteúdo, cultivando uma comunidade envolvente.
+**Interação Social:** Incentivar a interatividade entre os usuários, permitindo que compartilhem sugestões, playlists e comentários sobre o conteúdo, cultivando uma comunidade envolvente.
 
-Exploração e Descoberta: Criar ferramentas de descoberta que auxiliem os usuários a explorar novos títulos com base em suas preferências anteriores, ampliando suas experiências de entretenimento.
+**Exploração e Descoberta:** Criar ferramentas de descoberta que auxiliem os usuários a explorar novos títulos com base em suas preferências anteriores, ampliando suas experiências de entretenimento.
 
 
 ## Justificativa

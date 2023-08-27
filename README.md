@@ -5,7 +5,7 @@
 <p align="center"> Projeto - Aplicações Web - 1º Semestre
 
   
-<br><p align="center"> Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido. <br><br>
+<br><p align="center"> Website de entretenimento <br><br>
 
 ## <p align="center"> Integrantes
 

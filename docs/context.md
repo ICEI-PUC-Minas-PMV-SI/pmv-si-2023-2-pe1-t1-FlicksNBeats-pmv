@@ -4,7 +4,7 @@ O consumo de conteúdo por demanda se tornou uma tendência ao redor do mundo e 
 
 Portanto apresentamos o FlicksNBeats, uma plataforma revolucionária que reúne filmes, séries e músicas em um único espaço envolvente. Projetado para atender tanto aos aficionados por entretenimento quanto aos jovens adultos e adolescentes em busca de experiências personalizadas, o FlicksNBeats oferece uma ampla gama de opções para satisfazer todos os gostos.
 
-
+ 
 ## Problema
 
 Nem sempre é fácil escolher uma música, filme ou uma série para assistir entre tantas opções disponíveis nos serviços de streamings. Muitas vezes, ao procurar um filme para assistir, as pessoas têm dificuldade para encontrar algo adequado as suas expectativas.

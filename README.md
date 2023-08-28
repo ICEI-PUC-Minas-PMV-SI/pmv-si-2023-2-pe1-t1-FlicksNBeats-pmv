@@ -1,4 +1,4 @@
-# <p align="center"> NerdFlix
+# <p align="center"> FlicksNBeats
 
 <p align="center">Sistemas de Informação
 

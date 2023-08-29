@@ -25,9 +25,7 @@ Afim de solucionar o problema de desorganização e a dificuldade em se escolher
 
 ## Justificativa
 
-Quem nunca se incomodou com a quantidade de lançamentos semanais e material disponível nos inúmeros serviços de streaming? Acredite, essa é uma preocupação para quase metade dos usuários dessas plataformas. Mas, curiosamente, isso acompanha uma ideia quase oposta, a de que essas mesmas pessoas não apenas desejam manter a quantidade de serviços como querem assinar mais caso os lançamentos as interessem.
-
-Afim de solucionar esse problema relacionado a sobrecarga de contéudos semanais e mensais criamos FlicksNBeats que será uma plataforma para atender a necessidade de se ter um local único onde os usuários possam acessar uma ampla gama de conteúdo audiovisual, poupando tempo e esforço na busca por novos filmes, séries e músicas. Além disso, a interação social permitirá que os usuários compartilhem suas descobertas e se conectem com outros entusiastas, enriquecendo ainda mais a experiência de entretenimento. Por meio do FlicksNBeats, temos como objetivo oferecer uma plataforma que transcenda as limitações do entretenimento tradicional, satisfazendo os públicos-alvo 1 e 2 de maneira inovadora e envolvente.
+Afim de solucionar o problema relacionado a sobrecarga de contéudos semanais e mensais, o projeto da plataforma FlicksNBeats tem a intenção de atender a necessidade de se ter um local único onde os usuários possam acessar uma ampla gama de conteúdo audiovisual, poupando tempo e esforço na busca por novos filmes, séries e músicas. A plataforma visa oferecer algo que transcenda as limitações do entretenimento tradicional, satisfazendo os públicos-alvos de maneira inovadora e envolvente.
 
 
 ## Público-Alvo

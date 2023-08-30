@@ -7,9 +7,9 @@ Portanto apresentamos o FlicksNBeats, uma plataforma revolucionária que reúne 
  
 ## Problema
 
-Nem sempre é fácil escolher uma música, filme ou uma série para assistir entre tantas opções disponíveis nos serviços de streamings. Muitas vezes, ao procurar um filme para assistir, as pessoas têm dificuldade para encontrar algo adequado as suas expectativas.
+Um dos principais efeitos da globalização é o maior volume de informações, consequência também do desenvolvimento tecnológico que vem acontecendo em todo o mundo. Com a população cada vez mais conectada, os serviços de streaming surgiram e redefiniram as formas pelo qual muita gente consome músicas, filmes e séries.
 
-Afim de solucionar o problema de desorganização e a dificuldade em se escolher um filme/série ou uma música criamos o FlicksNBeats que será uma plataforma unificada e intuitiva para o usuário descobrir, assistir e ouvir uma variedade de filmes, séries e músicas. Através de recursos de recomendação inteligente e interações sociais, a plataforma visa criar uma comunidade dedicada de entusiastas de entretenimento, oferecendo uma solução completa e gratificante.
+Nesse sentido, a facilitação desse acesso também trouxe um problema: a dificuldade de decidir qual conteúdo consumir dentre a imensa varidade que as plataformas oferecem (The Paradox of Choice, 2004). Recomendar filmes, séries e músicas baseados em determinados nichos pode, de certa maneira, facilitar o processo de decisão consequemente reduzindo o tempo gasto nesse processo.
 
 
 ## Objetivos

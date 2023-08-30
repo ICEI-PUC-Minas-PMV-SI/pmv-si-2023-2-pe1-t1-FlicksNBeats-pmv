@@ -17,3 +17,6 @@ Exemplos de referências bibliográficas:
 
 **[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
 
+# Referências
+
+**[6]** - _Schwartz, B. (2004). **The Paradox of Choice: Why More is Less**. E-book. ISBN 0-06-000568-8._

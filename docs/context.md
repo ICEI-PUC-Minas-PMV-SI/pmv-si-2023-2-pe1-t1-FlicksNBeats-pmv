@@ -32,4 +32,4 @@ Afim de solucionar esse problema relacionado a sobrecarga de contéudos semanais
 
 ## Público-Alvo
 
-Amantes de entretenimento: Pessoas que gostam de consumir uma variedade de conteúdo, incluindo filmes, séries e músicas. Esse grupo é bastante amplo e abrange todas as faixas etárias e que gostam de vários estilos de conteúdo.
+Amantes de entretenimento: Pessoas que gostam de consumir filmes, séries e músicas. Esse grupo é bastante amplo e abrange todas as faixas etárias e que gostam de vários estilos de conteúdo.

@@ -10,7 +10,7 @@ Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se de
 
 Persona 2
 
-Gustavo, é um jovem de 26 anos e adora ouvir música. Ele procura por aplicativo que lhe dê a opção de filtro por gênero musical, por artista e que lhe ofereça sugestões de música de acordo com os estilos ouvidos.
+Gustavo, é um jovem de 26 anos e adora ouvir música. Ele procura por aplicativo que lhe dê a opção de filtro por gênero musical, por artista e que lhe ofereça sugestões de música de acordo com os estilos consumidos.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 

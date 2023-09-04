@@ -1,9 +1,10 @@
 # Introdução
 
-O consumo de conteúdo por demanda se tornou uma tendência ao redor do mundo e no Brasil não foi diferente. O streaming ganhou muitos adeptos, tanto que o país está entre os cinco maiores consumidores deste conceito. Hoje o serviço faz parte da rotina de 71% dos brasileiros que afirmam serem assinantes ou já terem assinado algum serviço para assistir a filmes ou séries online. Os dados são do levantamento "Streaming 2022", feito digitalmente com 1106 brasileiros conduzido pelo Hibou - empresa especializada em pesquisa e monitoramento de mercado e consumo. 
+O consumo de conteúdo por demanda se tornou uma tendência ao redor do mundo e no Brasil não foi diferente. O streaming ganhou muitos adeptos, tanto que o país está entre os cinco maiores consumidores deste conceito. Hoje o serviço faz parte da rotina de 71% dos brasileiros que afirmam serem assinantes ou já terem assinado algum serviço para assistir a filmes ou séries online. Os dados são do levantamento "Streaming 2022"[1], feito digitalmente com 1106 brasileiros conduzido pelo Hibou - empresa especializada em pesquisa e monitoramento de mercado e consumo. 
 
-Portanto apresentamos o FlicksNBeats, uma plataforma revolucionária que reúne filmes, séries e músicas em um único espaço envolvente. Projetado para atender tanto aos aficionados por entretenimento quanto aos jovens adultos e adolescentes em busca de experiências personalizadas, o FlicksNBeats oferece uma ampla gama de opções para satisfazer todos os gostos.
+Portanto apresentamos o FlicksNBeats, uma plataforma revolucionária que reúne filmes, séries e músicas em um único espaço envolvente. Projetado para atender os aficionados por entretenimento em busca de experiências personalizadas, o FlicksNBeats oferece uma ampla gama de opções para satisfazer todos os gostos.
 
+**[1]** - _Redação, Infra News Telecom. *Sete em cada dez brasileiros assinam plataformas de streaming*. Disponível em: https://www.infranewstelecom.com.br/sete-em-cada-dez-brasileiros-assinam-plataformas-de-streaming/. Acesso em: 03 de set. de 2023.
  
 ## Problema
 

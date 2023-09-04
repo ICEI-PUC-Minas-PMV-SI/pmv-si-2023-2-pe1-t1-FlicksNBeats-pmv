@@ -12,11 +12,7 @@ Ana Roberta é uma mulher aposentada de 62 anos. Sua vida inteira sempre foi uma
 
 Persona 2
 
-Gustavo, é um jovem de 26 anos e adora ouvir música. Ele procura por aplicativo que lhe dê a opção de filtro por gênero musical, por artista e que lhe ofereça sugestões de música de acordo com os estilos consumidos.
-
-Persona 3
-
-Júlia, é uma jovem de 18 anos que adora assistir filmes e séries de terror.Porém devido a dificuldade de visualizar somente filmes/séries desse estilo nos serviços de streaming, que acabam não mostrando filmes que não estão presentes em seu catálogo. Júlia procura um site que mostre todos os filmes e séries existentes que se encaixam no gênero que ela gosta de consumir.
+Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento audiovisual. Ela é uma estudante universitária antenada e criativa, sempre em busca das últimas tendências em filmes, séries e músicas. Seu smartphone e laptop são suas ferramentas essenciais para explorar o mundo do entretenimento. Ela é ativa nas redes sociais, especialmente no Instagram e no TikTok, onde compartilha suas opiniões sobre seus filmes e músicas favoritos, criando conteúdo para seus seguidores.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 

@@ -6,7 +6,9 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Persona 1
+
+Ana Roberta é uma mulher aposentada de 62 anos. Sua vida inteira sempre foi uma grande fã da indústria cinematográfica, adora assistir filmes, porém ela sempre usava métodos tradicionais para adquirir seus filmes, como locadoras e lojas físicas de compras. No entanto, nos últimos anos ela viu a drástica redução da disponibilidade destes serviços, então resolveu aderir o uso das plataformas de streaming, mas Ana se encontrou muito confusa dentre tantas opções disponíveis, no momento ela busca um site com uma ferramenta que possa auxiliá-la a encontrar os gêneros de filmes que no passado ela tanto gostava.
 
 Persona 2
 

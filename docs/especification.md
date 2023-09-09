@@ -14,10 +14,6 @@ Persona 2
 
 Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento audiovisual. Ela é uma estudante universitária antenada e criativa, sempre em busca das últimas tendências em filmes, séries e músicas. Seu smartphone e laptop são suas ferramentas essenciais para explorar o mundo do entretenimento. Ela é ativa nas redes sociais, especialmente no Instagram e no TikTok, onde compartilha suas opiniões sobre seus filmes e músicas favoritos, criando conteúdo para seus seguidores.
 
-Persona 3
-
-Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento audiovisual. Ela é uma estudante universitária antenada e criativa, sempre em busca das últimas tendências em filmes, séries e músicas. Seu smartphone e laptop são suas ferramentas essenciais para explorar o mundo do entretenimento. Ela é ativa nas redes sociais, especialmente no Instagram e no TikTok, onde compartilha suas opiniões sobre seus filmes e músicas favoritos, criando conteúdo para seus seguidores.
-
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:

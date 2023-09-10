@@ -28,6 +28,8 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
+Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
@@ -41,8 +43,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Eu, como Ana Roberta, |quero uma opção de "Suporte ao Cliente Amigável"| para obter ajuda quando tiver dúvidas sobre como usar a plataforma de streaming, tornando minha experiência mais tranquila.|
 |Eu, como Ana Roberta, |quero uma função de "Lançamentos Recentes"| para acompanhar os novos filmes que se encaixam nos meus gêneros preferidos, garantindo que eu não perca os últimos lançamentos.|
 |Eu, como Ana Roberta, |quero um recurso de "Conteúdo Clássico em Destaque"| que destaque filmes clássicos em minha página inicial, lembrando-me dos filmes que adoro e apresentando-me a novos clássicos que podem me interessar.|
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)

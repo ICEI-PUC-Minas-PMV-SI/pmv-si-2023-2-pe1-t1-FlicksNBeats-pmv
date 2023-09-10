@@ -35,18 +35,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Eu, como Sofia,     |quero uma função de "Recomendações Personalizadas"|para descobrir novos filmes e músicas que se alinhem com meus gostos variados, economizando tempo na busca por conteúdo interessante e diversificado.|
 |Eu, como Sofia,     |quero uma opção de "Perfil Personalizado"|onde eu possa listar meus filmes e músicas favoritos, para que meus amigos e seguidores nas redes sociais possam conhecer meu gosto e receber sugestões de mim.|
 |Eu, como Sofia,     |quero uma opção de "Chat de Discussão",| para que eu possa discutir os episódios mais recentes das minhas séries favoritas com outros fãs.|
+|Eu, como Sofia,     |quero uma função de "Classificação e Avaliação"|para dar notas e escrever críticas sobre filmes e músicas, contribuindo para a comunidade e ajudando outros usuários a fazer escolhas informadas.|
+|Eu, como Ana Roberta,|quero uma função de "Pesquisa por Gênero"|para encontrar facilmente os filmes que se encaixam nos gêneros que adoro, como clássicos, romance e comédia, tornando a busca por filmes mais direta e familiar.|
 |--------------------|------------------------------------|----------------------------------------|
 |--------------------|------------------------------------|----------------------------------------|
 |--------------------|------------------------------------|----------------------------------------|
 |--------------------|------------------------------------|----------------------------------------|
-|--------------------|------------------------------------|----------------------------------------|
-|--------------------|------------------------------------|----------------------------------------|
-
-1- Eu, como Sofia, quero uma função de "Recomendações Personalizadas" para descobrir novos filmes e músicas que se alinhem com meus gostos variados, economizando tempo na busca por conteúdo interessante e diversificado.
-
-2- Eu, como Sofia, quero uma opção de "Perfil Personalizado" onde eu possa listar meus filmes e músicas favoritos, para que meus amigos e seguidores nas redes sociais possam conhecer meu gosto e receber sugestões de mim.
-
-3- Eu, como Sofia, quero uma opção de "Chat de Discussão", para que eu possa discutir os episódios mais recentes das minhas séries favoritas com outros fãs.
 
 4- Eu, como Sofia, quero uma função de "Classificação e Avaliação" para dar notas e escrever críticas sobre filmes e músicas, contribuindo para a comunidade e ajudando outros usuários a fazer escolhas informadas.
 

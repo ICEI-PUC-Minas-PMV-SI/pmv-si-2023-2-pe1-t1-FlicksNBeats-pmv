@@ -32,6 +32,15 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
+|Eu, como Sofia,     |quero uma função de "Recomendações Personalizadas"|para descobrir novos filmes e músicas que se alinhem com meus gostos variados, economizando tempo na busca por conteúdo interessante e diversificado.|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
 
 1- Eu, como Sofia, quero uma função de "Recomendações Personalizadas" para descobrir novos filmes e músicas que se alinhem com meus gostos variados, economizando tempo na busca por conteúdo interessante e diversificado.
 

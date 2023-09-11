@@ -63,19 +63,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Para utilização da plataforma é necessário ter uma credencial de usuário                     | ALTA |  |
+|RF-001| Permitir o cadastro de usuário para utilização da plataforma                                 | ALTA |  |
 |RF-002| Realizar recomendações personalizadas de acordo com os gostos do usuário                     | ALTA |  |
 |RF-003| Permitir que o usuário crie um perfil personalizado de filmes e músicas                      | ALTA |  |
 |RF-004| Permitir que o usuário possa pesquisar filmes e músicas por gênero                           | ALTA |  |
 |RF-005| Informar ao usuário os lançamentos recentes de filmes e músicas de acordo com o seu perfil   | ALTA |  |
 |RF-006| Ter uma opção de chat para discussão entre usuários                                          | MÉDIA | |
 |RF-007| Permitir que o usuário dê notas e escreva críticas sobre filmes e músicas                    | MÉDIA | |
+|RF-008| Ter uma opção de suporte ao cliente para tirar dúvidas de uso da plataforma                  | MÉDIA | |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Ter uma opção de suporte ao cliente para tirar dúvidas de uso da plataforma | MÉDIA | 
+|RNF-001|-------------------------|----| 
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):

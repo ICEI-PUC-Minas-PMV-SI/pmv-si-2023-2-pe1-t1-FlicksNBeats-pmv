@@ -28,6 +28,8 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
+Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 | EU COMO... `PERSONA`  | QUERO/PRECISO ... `FUNCIONALIDADE`                                             | PARA ... `MOTIVO/VALOR`                                                          |
@@ -51,6 +53,8 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
+Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -59,18 +63,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
-
+|RF-001| Para utilização da plataforma é necessário ter uma credencial de usuário                     | ALTA |  |
+|RF-002| Realizar recomendações personalizadas de acordo com os gostos do usuário                     | ALTA |  |
+|RF-003| Permitir que o usuário crie um perfil personalizado de filmes e músicas                      | ALTA |  |
+|RF-004| Permitir que o usuário possa pesquisar filmes e músicas por gênero                           | ALTA |  |
+|RF-005| Informar ao usuário os lançamentos recentes de filmes e músicas de acordo com o seu perfil   | ALTA |  |
+|RF-006| Ter uma opção de chat para discussão entre usuários                                          | MÉDIA | |
+|RF-007| Permitir que o usuário dê notas e escreva críticas sobre filmes e músicas                    | MÉDIA | |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+|RNF-001| Ter uma opção de suporte ao cliente para tirar dúvidas de uso da plataforma | MÉDIA | 
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):

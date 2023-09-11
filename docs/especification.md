@@ -12,7 +12,7 @@ Ana Roberta é uma mulher aposentada de 62 anos. Sua vida inteira sempre foi uma
 
 Persona 2
 
-Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento audiovisual. Ela é uma estudante universitária antenada e criativa, sempre em busca das últimas tendências em filmes, séries e músicas. Seu smartphone e laptop são suas ferramentas essenciais para explorar o mundo do entretenimento. Ela é ativa nas redes sociais, especialmente no Instagram e no TikTok, onde compartilha suas opiniões sobre seus filmes e músicas favoritos, criando conteúdo para seus seguidores.
+Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento audiovisual. Ela é uma estudante universitária antenada e criativa, sempre em busca das últimas tendências em filmes, séries e músicas. Seu smartphone e laptop são suas ferramentas essenciais para explorar o mundo do entretenimento. Ela é ativa nas redes sociais, especialmente no Instagram e no TikTok, e busca um site onde seus seguidores possam acessar a qualquer momento suas opiniões sobre filmes, séries e músicas favoritas e tendências de uma forma bem organizada.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 

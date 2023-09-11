@@ -30,16 +30,17 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-| EU COMO... `PERSONA`          | QUERO/PRECISO ... `FUNCIONALIDADE`                                             | PARA ... `MOTIVO/VALOR`                                                          |
-|-------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Sofia (usuário-cliente)       | Receber recomendações de novos filmes e músicas que se alinhem com meus gostos | Economizar tempo na busca por conteúdo interessante e diversificado.             |
-| Sofia (usuário-cliente)       | Preciso personalizar meu perfil com meus filmes e músicas favoritas            | Meus amigos e seguidores consigam conhecer meu gosto e receber sugestões minhas. |
-| Sofia (usuário-cliente)       | Preciso de um "Chat de Discussão"                                              | Discutir os episódios mais recentes das minhas séries favoritas com outros fãs.  |
-| Sofia (usuário-cliente)       | Preciso ser capaz de dar notas e escrever críticas sobre filmes e músicas      | Contribuir com a comunidade e ajudar outros usuários com suas escolhas.          |
-| Ana Roberta (usuário-cliente) | Preciso ser capaz de filtar músicas e filmes por gênero                        | Encontrar facilmente os filmes e músicas que se encaixam no gênero que adoro.    |
-| Ana Roberta (usuário-cliente) | Preciso de um "Perfil Simplificado"                                            | Encontrar facilmente filmes e séries que já assisti e favoritei.                 |
-| Ana Roberta (usuário-cliente) | Preciso de uma seção de suporte ao cliente                                     | Obter ajuda sobre como utiliar a plataforma.                                     |
-| Ana Roberta (usuário-cliente) | Preciso de uma página de "Lançamentos Recentes"                                | Acompanhar os novos filmes, garantindo que eu não perca os últimos lançamentos.  |
+| EU COMO... `PERSONA`  | QUERO/PRECISO ... `FUNCIONALIDADE`                                             | PARA ... `MOTIVO/VALOR`                                                          |
+|-----------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Sofia (usuário)       | preciso uma função de "Recomendações Personalizadas" | para descobrir novos filmes e músicas que se alinhem com meus gostos variados, economizando tempo na busca por conteúdo interessante e diversificado.           |
+| Sofia (usuário)       | quero uma opção de "Perfil Personalizado"          | onde eu possa listar meus filmes e músicas favoritos, para que meus amigos e seguidores nas redes sociais possam conhecer meu gosto e receber sugestões de mim.|
+| Sofia (usuário)       | quero uma opção de "Chat de Discussão"                                       | para que eu possa discutir os episódios mais recentes das minhas séries favoritas com outros fãs. |
+| Sofia (usuário)       | quero uma função de "Classificação e Avaliação"    | para dar notas e escrever críticas sobre filmes e músicas, contribuindo para a comunidade e ajudando outros usuários a fazer escolhas informadas.         |
+| Sofia (usuário) | quero uma função de "Pesquisa por Gênero"                       | para encontrar facilmente os filmes que se encaixam nos gêneros que adoro, como clássicos, romance e comédia, tornando a busca por filmes mais direta e familiar.    |
+| Ana Roberta (usuário) | preciso de um "Perfil Simplificado"                                            | para personalizar minha experiência com opções fáceis de entender, como uma lista de favoritos e uma maneira de marcar filmes que já assisti.         |
+| Ana Roberta (usuário) | quero uma opção de "Suporte ao Cliente Amigável"                             | para obter ajuda quando tiver dúvidas sobre como usar a plataforma de streaming, tornando minha experiência mais tranquila.                                 |
+| Ana Roberta (usuário) | preciso de uma página de "Lançamentos Recentes"                                | para acompanhar os novos filmes que se encaixam nos meus gêneros preferidos, garantindo que eu não perca os últimos lançamentos.  |
+| Ana Roberta (usuário) | quero um recurso de "Conteúdo Clássico em Destaque"                            | que destaque filmes clássicos em minha página inicial, lembrando-me dos filmes que adoro e apresentando-me a novos clássicos que podem me interessar.  |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 

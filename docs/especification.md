@@ -37,12 +37,13 @@ Sofia é uma jovem adulta de 19 anos com uma paixão ardente pelo entretenimento
 |RF-006| O sistema deve ter uma opção de chat para discussão entre usuários                                        | MÉDIA | |
 |RF-007| O sistema deve permitir que o usuário dê notas e escreva críticas sobre filmes e músicas                  | MÉDIA | |
 |RF-008| O sistema deve ter uma opção de suporte ao cliente para tirar dúvidas de uso da plataforma                | MÉDIA | |
+|RF-009| O sistema deve permitir publicar a lista de favoritos                                                     | MÉDIA | |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
 ## Restrições

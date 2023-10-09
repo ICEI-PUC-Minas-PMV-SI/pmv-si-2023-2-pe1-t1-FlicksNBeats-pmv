@@ -8,6 +8,14 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
 
+![Tela de cadastro desktop](img/cadastro_desktop.png)
+![Tela de login desktop](img/login_desktop.png)
+![Tela main desktop](img/main_screen_desktop.png)
+![Tela de filme desktop](img/movie_desktop.png)
+![Tela de perfil desktop](img/perfil_desktop.png)
+![Tela de pesquisa desktop](img/pesquisa_desktop.png)
+![Tela de filtro desktop](img/filtro_desktop.png)
+
 
 ## Cores
 

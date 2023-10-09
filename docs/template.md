@@ -8,6 +8,34 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
 
+### Mobile
+
+![Tela de cadastro mobile](img/cadastro_mobile.png)
+Tela de cadastro mobile
+
+![Tela de login mobile](img/login_mobile.png)
+Tela de login mobile
+
+![Tela main mobile](img/main_screen_mobile.png)
+Tela main mobile
+
+![Tela de filme mobile](img/movie_mobile.png)
+Tela de filme mobile
+
+![Tela de perfil mobile](img/perfil_mobile.png)
+Tela de perfil mobile
+
+![Tela de pesquisa mobile](img/pesquisa_mobile.png)
+Tela de pesquisa mobile
+
+![Tela de filtro mobile](img/filtro_mobile.png)
+Tela de filtro mobile
+
+![Tela de menu mobile](img/menu_mobile.png)
+Tela de menu mobile
+
+### Desktop
+
 ![Tela de cadastro desktop](img/cadastro_desktop.png)
 Tela de cadastro desktop
 

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+#login {
+    text-align: center;
+    padding: 100px;
+    background-color: #1A1A1A;
+}
+
+@media (max-width: 767px) {
+    #login {
+        text-align: center;
+        padding: 0px;
+        background-color: #1A1A1A;
+    }
+}
+
+#login h5 {
+    color: white;
+    /* font-weight: bold; */
+}
+
+.form-check label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.form-signin {
+     width: 80%; 
+     display: inline-block;
+}
+
+#paragrafo-cadastro {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-signin button {
+    background-color: #98317F;
+    color: white;
+    border-color: #98317F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+.form-signin button:hover {
+    background-color: #98317F;
+    color: white;
+    font-weight: bold;
+    border-color: #98317F;
+    
+}
+
+.row {
+    background-color: #1A1A1A;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+ 
+#container-mobile {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#container-mobile h5 {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+  .centered { 
+    /* Alinhando texto dentro da imagem */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 40px;
+    white-space: nowrap;
+    padding-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #textosdesktop {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer {
+    color: #72757E;
+    font-weight: bold;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:0px;
+    text-align: center;
+  }
+
+  
+
+
+ /* RESPONSIVIDADE */
+
+@media (min-width: 767px) {
+    #robotdesktop {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #robotdesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    #robotmobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #robotmobile {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    #logomobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #logomobile {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #login img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    h5 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 767px) {
+    #container-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #textosdesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .form-signin {
+        width: 50%;
+        overflow: hidden;
+   }
+}
+
+@media (max-width: 766px) {
+    footer {
+        display: none; 
+    }
+}
+
+@media (max-width: 484px) {
+    footer {
+        display: inline;
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        display: none;
+    }
+}

@@ -117,11 +117,11 @@ a {
 
 @media (max-width: 480px) {
   .carousel-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .carousel-subtitle {
-    font-size: 20px;
+    font-size: 12px;
   }
 }
 
@@ -164,4 +164,85 @@ a {
 
 .flickity-prev-next-button .arrow {
   fill: white;
+}
+
+/* REVIEWS */
+.reviews-wrapper {
+  display: grid;
+  gap: 8px;
+  row-gap: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px 16px 20px;
+  gap: 10;
+  grid-auto-rows: 140px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.review-card {
+  border-top: 1px solid #ffffff;
+  padding-top: 4px;
+  display: grid;
+  gap: 8px;
+}
+
+.review-card-image-wrapper {
+  width: 64px;
+}
+
+.review-card-image-wrapper > img {
+  border-radius: 4px;
+}
+
+.review-card-content {
+  display: flex;
+  gap: 10px;
+  height: 96px;
+  text-align: start;
+}
+
+.review-card-info {
+  display: grid;
+  gap: 8px;
+}
+
+.review-card-info > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-card-info > div.title {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.review-card-info > div.title > span.year {
+  font-weight: 400;
+  font-size: 12px;
+  color: #94a1b2;
+}
+
+.review-card-info > .user > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.review-card-info > .user > .user-name {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.review-card-description {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer {
+  font-weight: 600;
+  font-size: 12px;
+  color: #72757e;
+  padding: 40px 20px 14px 20px;
 }

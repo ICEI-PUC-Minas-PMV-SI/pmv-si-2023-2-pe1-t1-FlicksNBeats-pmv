@@ -246,3 +246,111 @@ footer {
   color: #72757e;
   padding: 40px 20px 14px 20px;
 }
+
+#cabecalho { /*Parte 1 do cabeçalho*/
+  background-color: #1a1a1a;
+  text-align: center;
+  height: 60px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ico { /*Parte 2 cabeçalho*/
+  position: absolute;
+  left: 30px; 
+  margin: 0;
+  padding: 0;
+}
+
+.desenhofilme { /*Parte 3 cabeçalho*/
+  display: inline-block;
+  position: absolute;
+  right: 340px;
+  margin: 0;
+  padding: 0;
+}
+
+.album { /*Parte 4 cabeçalho*/
+  position: absolute;
+  right: 190px;
+  margin: 0;
+  padding: 0;
+}
+
+.perfil { /*Parte 5 cabeçalho*/
+  position: absolute;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+body { /*Corpo do site */
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+form { /*design da guia de pesquisa do site*/
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 120px;
+}
+
+input[type="text"] { /*Aqui também é referente a parte de pesquisa*/
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+  width: 400px;
+}
+
+button { /*referente também a guia de busca*/
+  background-color: #98317f;
+  border: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button img { /*referente também a guia de busca*/
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+#final { /* relacionado a parte de baixo do site onde fica os nossos direitos reservados*/
+  background-color: #1a1a1a;
+  text-align: center;
+  height: 60px; 
+  width: 100%; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0%;
+}
+
+.imagens_fundo { /*Tentando fazer a configuração do carrosel de fotos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  height: 50vh; 
+  padding: 200px; 
+  overflow-x: auto;
+}
+
+.imagens_fundo img {
+  max-width: 100%;
+  height: auto;
+}

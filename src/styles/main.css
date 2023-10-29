@@ -91,6 +91,47 @@ a {
   margin-top: 10px;
 }
 
+/* HEADER */
+
+.header {
+  position: relative;
+}
+
+.header-background {
+  width: 100%;
+}
+
+.header-gradient {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0) 0%,
+    rgba(26, 26, 26, 1) 100%
+  );
+}
+
+@media screen and (max-width: 767px) {
+  .header-background {
+    content: url("../assets/background_sm.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-background {
+    content: url("../assets/background_xl.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-background {
+    content: url("../assets/background_xl.png");
+  }
+}
+
 /* CAROUSEL */
 
 .carousel-info-wrapper {

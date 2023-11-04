@@ -23,10 +23,40 @@
   </head>
   <body>
     <!-- HEADER -->
+    <header class="header">
+      <img src="./assets/logo.svg" alt="" class="header-logo" />
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" />
+        <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
+      </div>
+      <div class="header-menu">
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes/Séries</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-music"></i>
+            <span>Albums</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu Perfil</span>
+          </div>
+        </a>
+        <div class="header-menu-collapsed" id="menu">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </header>
     <!-- HEADER -->
-    <section class="header">
-      <div class="header-background"></div>
-      <div class="header-gradient"></div>
+    <section class="main">
+      <div class="main-background"></div>
+      <div class="main-gradient"></div>
     </section>
     <!-- SIGN UP -->
     <section class="sign-up-wrapper">
@@ -34,9 +64,11 @@
       <p class="subtitle">
         Encontre recomendações surpreendentes de filmes, séries e músicas.
       </p>
-      <button class="button">CRIAR CONTA</button>
+      <button class="button">
+        <a href="./pages/cadastro.html">CRIAR CONTA</a>
+      </button>
       <p class="description">
-        Já é membro? Clique <a href="#id">aqui</a> para logar
+        Já é membro? Clique <a href="./pages/login.html">aqui</a> para logar
       </p>
     </section>
     <!-- SIGN UP -->
@@ -292,8 +324,51 @@
       </div>
     </section>
     <!-- REVIEWS -->
+    <!-- FOOTER -->
     <footer>©2019 Flicks N Beats. All Rights Reserved.</footer>
     <!-- FOOTER -->
-    <!-- FOOTER -->
+    <section class="overlay" id="overlay">
+      <div>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes/Séries</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-music"></i>
+            <span>Albums</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu Perfil</span>
+          </div>
+        </a>
+        <div id="closeOverlayBtn">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </section>
   </body>
+  <script>
+    const menuButton = document.getElementById("menu");
+    const closeMenuButton = document.getElementById("closeOverlayBtn");
+
+    function handleActiveOverlay() {
+      const overlay = document.getElementById("overlay");
+      const classList = overlay.classList;
+
+      if (classList.contains("overlay-active")) {
+        overlay.classList.remove("overlay-active");
+      } else {
+        overlay.classList.add("overlay-active");
+      }
+    }
+
+    menuButton.addEventListener("click", handleActiveOverlay);
+    closeMenuButton.addEventListener("click", handleActiveOverlay);
+  </script>
 </html>

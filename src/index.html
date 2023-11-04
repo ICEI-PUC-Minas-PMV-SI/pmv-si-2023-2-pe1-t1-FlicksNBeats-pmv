@@ -30,13 +30,13 @@
         <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
       </div>
       <div class="header-menu">
-        <a href="">
+        <a href="#movies">
           <div class="header-menu-option">
             <i class="fa-solid fa-video"></i>
             <span>Filmes/Séries</span>
           </div>
         </a>
-        <a href="">
+        <a href="#albuns">
           <div class="header-menu-option">
             <i class="fa-solid fa-music"></i>
             <span>Albums</span>
@@ -74,7 +74,7 @@
     <!-- SIGN UP -->
 
     <!-- CAROUSEL MOVIES -->
-    <section>
+    <section id="movies">
       <div class="carousel-info-wrapper">
         <p class="carousel-title">Picks do momento!</p>
         <p class="carousel-subtitle">Filmes/Séries</p>
@@ -127,7 +127,7 @@
     <!-- CAROUSEL MOVIES -->
 
     <!-- CAROUSEL ALBUMS-->
-    <section>
+    <section id="albuns">
       <div class="carousel-info-wrapper">
         <p class="carousel-subtitle">Albums</p>
       </div>
@@ -325,37 +325,47 @@
     </section>
     <!-- REVIEWS -->
     <!-- FOOTER -->
-    <footer>©2019 Flicks N Beats. All Rights Reserved.</footer>
+    <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
     <!-- FOOTER -->
     <section class="overlay" id="overlay">
-      <div>
-        <a href="">
-          <div class="header-menu-option">
+      <div class="overlay-header" id="closeMenuBtn">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+      <div class="overlay-content">
+        <a href="#movies" id="overlayMoviesBtn">
+          <div>
             <i class="fa-solid fa-video"></i>
             <span>Filmes/Séries</span>
           </div>
         </a>
-        <a href="">
-          <div class="header-menu-option">
+        <a href="#albuns" id="overlayAlbumsBtn">
+          <div>
             <i class="fa-solid fa-music"></i>
             <span>Albums</span>
           </div>
         </a>
         <a href="">
-          <div class="header-menu-option">
+          <div>
             <i class="fa-solid fa-user"></i>
             <span>Meu Perfil</span>
           </div>
         </a>
         <div id="closeOverlayBtn">
-          <i class="fa-solid fa-bars fa-lg"></i>
+          <i class="fa-solid fa-circle-xmark"></i>
         </div>
+      </div>
+      <div class="overlay-footer">
+        <span>©2023 Flicks N Beats. All Rights Reserved.</span>
       </div>
     </section>
   </body>
   <script>
+    // Mobile menu overlay
     const menuButton = document.getElementById("menu");
-    const closeMenuButton = document.getElementById("closeOverlayBtn");
+    const closeOverlayBtn = document.getElementById("closeOverlayBtn");
+    const closeMenuBtn = document.getElementById("closeMenuBtn");
+    const overlayMoviesBtn = document.getElementById("overlayMoviesBtn");
+    const overlayAlbumsBtn = document.getElementById("overlayAlbumsBtn");
 
     function handleActiveOverlay() {
       const overlay = document.getElementById("overlay");
@@ -369,6 +379,9 @@
     }
 
     menuButton.addEventListener("click", handleActiveOverlay);
-    closeMenuButton.addEventListener("click", handleActiveOverlay);
+    closeOverlayBtn.addEventListener("click", handleActiveOverlay);
+    closeMenuBtn.addEventListener("click", handleActiveOverlay);
+    overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
+    overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
 </html>

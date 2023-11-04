@@ -390,9 +390,43 @@ footer {
 
   transition: 200ms ease-out;
   transform: translate(100%);
+
+  display: grid;
+  grid-template-rows: 60px auto 60px;
 }
 
 .overlay-active {
   transition: 200ms ease-in;
   transform: translate(0%);
+}
+
+.overlay-header {
+  height: 60px;
+  padding-top: 18px;
+  padding-right: 40px;
+  width: 60px;
+  justify-self: end;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  font-size: 20px;
+}
+
+.overlay-content i {
+  transform: scale(1.4);
+}
+
+.overlay-content span {
+  margin-left: 8px;
+}
+
+.overlay-footer {
+  height: 60px;
+  font-size: 12px;
+  opacity: 0.8;
+  padding: 20px;
 }

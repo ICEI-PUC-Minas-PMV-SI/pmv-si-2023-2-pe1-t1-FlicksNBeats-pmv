@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flicks N Beats</title>
+    <link rel="stylesheet" href="../styles/pesquisar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f1b24ba51d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img src="../assets/logo.svg" alt="" class="header-logo" />
+      <div class="search-bar">
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            onkeypress="handle(event)"
+          />
+        </form>
+        <div class="search-bar-icon" id="filterBtn">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </div>
+      <div class="header-menu">
+        <a href="#movies">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes/Séries</span>
+          </div>
+        </a>
+        <a href="#albuns">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-music"></i>
+            <span>Albums</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu Perfil</span>
+          </div>
+        </a>
+        <div class="header-menu-collapsed" id="menu">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </header>
+    <section class="type-filter">
+      <p class="type-filter-title">Buscar por:</p>
+      <div class="type-filter-options">
+        <input
+          type="checkbox"
+          id="moviesTypeOption"
+          name="moviesTypeOption"
+          value="moviesType"
+        />
+        <label for="moviesTypeOption">Filmes/Séries</label><br />
+        <input
+          type="checkbox"
+          id="albumsTypeOption"
+          name="albumsTypeOption"
+          value="albumsType"
+        />
+        <label for="albumsTypeOption">Albums</label><br />
+      </div>
+    </section>
+    <section class="found">
+      <p>Filmes encontrados</p>
+      <div class="found-items">
+        <img src="../assets/movies/1.jpeg" alt="" />
+        <img src="../assets/movies/2.jpeg" alt="" />
+        <img src="../assets/movies/3.jpeg" alt="" />
+      </div>
+    </section>
+    <section class="found">
+      <p>Séries encontrados</p>
+      <div class="found-items">
+        <img src="../assets/movies/4.jpeg" alt="" />
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
+    <!-- FOOTER -->
+    <section class="overlay" id="overlay">
+      <div class="overlay-header" id="closeMenuBtn">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+      <div class="overlay-content">
+        <a href="#movies" id="overlayMoviesBtn">
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes/Séries</span>
+          </div>
+        </a>
+        <a href="#albuns" id="overlayAlbumsBtn">
+          <div>
+            <i class="fa-solid fa-music"></i>
+            <span>Albums</span>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <span>Meu Perfil</span>
+          </div>
+        </a>
+        <div id="closeOverlayBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+      </div>
+      <div class="overlay-footer">
+        <span>©2023 Flicks N Beats. All Rights Reserved.</span>
+      </div>
+    </section>
+    <!-- FILTER -->
+    <section class="filter-popup" id="filterPopup">
+      <div class="filter-popup-content">
+        <div id="closeFilterBtn" class="close-filter-btn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <span class="filter-title">Gêneros filtrados:</span>
+        <div class="options-wrapper">
+          <p class="filter-option">Ação</p>
+          <p class="filter-option">Comédia</p>
+          <p class="filter-option">Suspense</p>
+          <p class="filter-option">Terror</p>
+          <p class="filter-option">Romance</p>
+          <p class="filter-option">Drama</p>
+          <p class="filter-option">Documentário</p>
+          <p class="filter-option">Ficção Científica</p>
+        </div>
+        <div class="filter-apply" id="applyFilterBtn">
+          <span>APLICAR</span>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    // Mobile menu overlay
+    const menuButton = document.getElementById("menu");
+    const closeOverlayBtn = document.getElementById("closeOverlayBtn");
+    const closeMenuBtn = document.getElementById("closeMenuBtn");
+    const overlayMoviesBtn = document.getElementById("overlayMoviesBtn");
+    const overlayAlbumsBtn = document.getElementById("overlayAlbumsBtn");
+
+    function handleActiveOverlay() {
+      const overlay = document.getElementById("overlay");
+      const classList = overlay.classList;
+
+      if (classList.contains("overlay-active")) {
+        overlay.classList.remove("overlay-active");
+      } else {
+        overlay.classList.add("overlay-active");
+      }
+    }
+
+    menuButton.addEventListener("click", handleActiveOverlay);
+    closeOverlayBtn.addEventListener("click", handleActiveOverlay);
+    closeMenuBtn.addEventListener("click", handleActiveOverlay);
+    overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
+    overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
+  </script>
+  <script>
+    // Filter popup
+    const filterBtn = document.getElementById("filterBtn");
+    const closeFilterBtn = document.getElementById("closeFilterBtn");
+    const applyFilterBtn = document.getElementById("applyFilterBtn");
+
+    function handleFilterPopup() {
+      const filterPopup = document.getElementById("filterPopup");
+      const classList = filterPopup.classList;
+
+      if (classList.contains("filter-popup-active")) {
+        filterPopup.classList.remove("filter-popup-active");
+      } else {
+        filterPopup.classList.add("filter-popup-active");
+      }
+    }
+
+    filterBtn.addEventListener("click", handleFilterPopup);
+    closeFilterBtn.addEventListener("click", handleFilterPopup);
+    applyFilterBtn.addEventListener("click", handleFilterPopup);
+  </script>
+</html>

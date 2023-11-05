@@ -26,7 +26,13 @@
     <header class="header">
       <img src="./assets/logo.svg" alt="" class="header-logo" />
       <div class="search-bar">
-        <input type="text" placeholder="Pesquisar" />
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            onkeypress="handle(event)"
+          />
+        </form>
         <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
       </div>
       <div class="header-menu">
@@ -359,6 +365,15 @@
       </div>
     </section>
   </body>
+  <script>
+    // Input go to search page
+    function handle(e) {
+      if (e.keyCode === 13) {
+        e.preventDefault();
+        window.location = "http://127.0.0.1:5500/src/pages/pesquisar.html";
+      }
+    }
+  </script>
   <script>
     // Mobile menu overlay
     const menuButton = document.getElementById("menu");

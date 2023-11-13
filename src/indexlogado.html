@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flicks N Beats</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <script src="https://kit.fontawesome.com/f1b24ba51d.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="/src/js/script.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="./assets/logo.svg" alt="" class="header-logo" />
+    <div class="search-bar">
+      <form action="#">
+        <input type="text" placeholder="Pesquisar" onkeypress="handle(event)" />
+      </form>
+      <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
+    </div>
+    <div class="header-menu">
+      <a href="">
+        <div class="header-menu-option">
+          <i class="fa-solid"></i>
+          <span id="nome">UsuarioNome</span>
+        </div>
+      </a>
+      <a href="#movies">
+        <div class="header-menu-option">
+          <i class="fa-solid fa-video"></i>
+          <span>Filmes/Séries</span>
+        </div>
+      </a>
+      <a href="#albuns">
+        <div class="header-menu-option">
+          <i class="fa-solid fa-music"></i>
+          <span>Albums</span>
+        </div>
+      </a>
+      <a href="/src/pages/perfil.html">
+        <div class="header-menu-option">
+          <i class="fa-solid fa-user"></i>
+          <span>Meu Perfil</span>
+        </div>
+      </a>
+      <a href="/src/index.html">
+        <div class="header-menu-option">
+          <i class="fa-solid"></i>
+          <span id="nome" onclick="logout()">Sair</span>
+        </div>
+      </a>
+      <div class="header-menu-collapsed" id="menu">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER -->
+  <section class="main">
+    <div class="main-background"></div>
+    <div class="main-gradient"></div>
+  </section>
+  <!-- SIGN UP -->
+  <section class="sign-up-wrapper">
+    <p class="title">Flicks 'N' Beats</p>
+    <p class="subtitle">
+      Encontre recomendações surpreendentes de filmes, séries e músicas.
+    </p>
+    <button class="button">
+      <a href="./pages/cadastro.html">CRIAR CONTA</a>
+    </button>
+    <p class="description">
+      Já é membro? Clique <a href="./pages/login.html">aqui</a> para logar
+    </p>
+  </section>
+  <!-- SIGN UP -->
+
+  <!-- CAROUSEL MOVIES -->
+  <section id="movies">
+    <div class="carousel-info-wrapper">
+      <p class="carousel-title">Picks do momento!</p>
+      <p class="carousel-subtitle">Filmes/Séries</p>
+    </div>
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true , "pageDots": false, "contain": true }'>
+      <div class="gallery-cell">
+        <img src="./assets/movies/1.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/2.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/3.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/4.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/5.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/6.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/7.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/8.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/9.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/10.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/1.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/2.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell">
+        <img src="./assets/movies/3.jpeg" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- CAROUSEL MOVIES -->
+
+  <!-- CAROUSEL ALBUMS-->
+  <section id="albuns">
+    <div class="carousel-info-wrapper">
+      <p class="carousel-subtitle">Albums</p>
+    </div>
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true , "pageDots": false, "contain": true }'>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/1.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/2.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/3.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/4.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/5.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/6.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/1.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/2.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/3.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/4.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/5.jpeg" alt="" />
+      </div>
+      <div class="gallery-cell album">
+        <img src="./assets/albuns/6.jpeg" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- CAROUSEL ALBUMS -->
+
+  <!-- REVIEWS -->
+  <section>
+    <div class="carousel-info-wrapper">
+      <p class="carousel-title">Reviews da semana:</p>
+    </div>
+    <div class="reviews-wrapper">
+      <div class="review-card">
+        <div class="review-card-content">
+          <div class="review-card-image-wrapper">
+            <img src="./assets/movies/1.jpeg" alt="" />
+          </div>
+          <div class="review-card-info">
+            <div class="title">
+              The Last Stop in Yuma County <span class="year">2023</span>
+            </div>
+            <div class="user">
+              <img src="./assets/user/icon.jpeg" alt="" />
+              <p class="user-name">Steven Spielberg</p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="review-card-description">
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-content">
+          <div class="review-card-image-wrapper">
+            <img src="./assets/movies/1.jpeg" alt="" />
+          </div>
+          <div class="review-card-info">
+            <div class="title">
+              The Last Stop in Yuma County <span class="year">2023</span>
+            </div>
+            <div class="user">
+              <img src="./assets/user/icon.jpeg" alt="" />
+              <p class="user-name">Steven Spielberg</p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="review-card-description">
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-content">
+          <div class="review-card-image-wrapper">
+            <img src="./assets/movies/1.jpeg" alt="" />
+          </div>
+          <div class="review-card-info">
+            <div class="title">
+              The Last Stop in Yuma County <span class="year">2023</span>
+            </div>
+            <div class="user">
+              <img src="./assets/user/icon.jpeg" alt="" />
+              <p class="user-name">Steven Spielberg</p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="review-card-description">
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-content">
+          <div class="review-card-image-wrapper">
+            <img src="./assets/movies/1.jpeg" alt="" />
+          </div>
+          <div class="review-card-info">
+            <div class="title">
+              The Last Stop in Yuma County <span class="year">2023</span>
+            </div>
+            <div class="user">
+              <img src="./assets/user/icon.jpeg" alt="" />
+              <p class="user-name">Steven Spielberg</p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="review-card-description">
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-content">
+          <div class="review-card-image-wrapper">
+            <img src="./assets/movies/1.jpeg" alt="" />
+          </div>
+          <div class="review-card-info">
+            <div class="title">
+              The Last Stop in Yuma County <span class="year">2023</span>
+            </div>
+            <div class="user">
+              <img src="./assets/user/icon.jpeg" alt="" />
+              <p class="user-name">Steven Spielberg</p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-star" style="color: #98317f"></i>
+              <i class="fa-solid fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="review-card-description">
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- REVIEWS -->
+  <!-- FOOTER -->
+  <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
+  <!-- FOOTER -->
+  <section class="overlay" id="overlay">
+    <div class="overlay-header" id="closeMenuBtn">
+      <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+    <div class="overlay-content">
+      <a href="" id="nome2">
+        <div>
+          <i class="fa-solid"></i>
+          <span>NomeUsuario</span>
+        </div>
+      </a>
+      <a href="#movies" id="overlayMoviesBtn">
+        <div>
+          <i class="fa-solid fa-video"></i>
+          <span>Filmes/Séries</span>
+        </div>
+      </a>
+      <a href="#albuns" id="overlayAlbumsBtn">
+        <div>
+          <i class="fa-solid fa-music"></i>
+          <span>Albums</span>
+        </div>
+      </a>
+      <a href="/src/pages/perfil.html">
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <span>Meu Perfil</span>
+        </div>
+      </a>
+      <a href="/src/index.html">
+        <div>
+          <i class="fa-solid"></i>
+          <span id="nome" onclick="logout()">Sair</span>
+        </div>
+      </a>
+      <div id="closeOverlayBtn">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    </div>
+    <div class="overlay-footer">
+      <span>©2023 Flicks N Beats. All Rights Reserved.</span>
+    </div>
+  </section>
+</body>
+<script>
+  // Input go to search page
+  function handle(e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      window.location = "http://127.0.0.1:5500/src/pages/pesquisar.html";
+    }
+  }
+</script>
+<script>
+  // Mobile menu overlay
+  const menuButton = document.getElementById("menu");
+  const closeOverlayBtn = document.getElementById("closeOverlayBtn");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+  const overlayMoviesBtn = document.getElementById("overlayMoviesBtn");
+  const overlayAlbumsBtn = document.getElementById("overlayAlbumsBtn");
+
+  function handleActiveOverlay() {
+    const overlay = document.getElementById("overlay");
+    const classList = overlay.classList;
+
+    if (classList.contains("overlay-active")) {
+      overlay.classList.remove("overlay-active");
+    } else {
+      overlay.classList.add("overlay-active");
+    }
+  }
+
+  menuButton.addEventListener("click", handleActiveOverlay);
+  closeOverlayBtn.addEventListener("click", handleActiveOverlay);
+  closeMenuBtn.addEventListener("click", handleActiveOverlay);
+  overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
+  overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
+</script>
+
+</html>

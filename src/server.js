@@ -41,6 +41,28 @@ server.post("/auth/login", (req, res) => {
   }
 });
 
+server.post("/auth/register", (req, res) => {
+  const newUser = req.body;
+
+  if (newUser.name && newUser.email && newUser.password) {
+    userdb.users.push(newUser);
+    const updatedData = JSON.stringify(userdb, null, 2);
+    fs.writeFileSync("./users.json", updatedData);
+
+    const access_token = createToken({
+      email: newUser.email,
+      password: newUser.password,
+    });
+
+    res.status(200).json({ access_token });
+  } else {
+    const status = 401;
+    const message = "Wrong data";
+
+    res.status(status).json({ status, message });
+  }
+});
+
 server.use((req, res, next) => {
   if (
     req.headers.authorization &&

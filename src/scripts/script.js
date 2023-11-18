@@ -13,25 +13,6 @@ function cadastrar() {
   localStorage.setItem(novo.email, jt);
 }
 
-// FUNCAO DE LOGIN
-function buscaUsuario(email, senha) {
-  var jt = localStorage.getItem(email);
-  if (jt != null) {
-    var pessoa = JSON.parse(jt);
-    if (
-      document.getElementById("email").value === pessoa.email &&
-      senha === pessoa.senha
-    ) {
-      window.alert("Login Realizado com sucesso!");
-      localStorage.setItem("usuario_logado", pessoa.email);
-      localStorage.setItem("usuario_logado_nome", pessoa.nome);
-      window.location.href = "/pages/logado.html";
-    } else if (senha != pessoa.senha) {
-      window.alert("Senha Invalida");
-    }
-  }
-}
-
 // FUNCAO AO LOGAR
 window.onload = function usuarioLogado() {
   let nomeUsuario = localStorage.getItem("usuario_logado_nome");

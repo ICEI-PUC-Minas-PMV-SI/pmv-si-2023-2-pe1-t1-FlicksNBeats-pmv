@@ -10,8 +10,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="../styles/login.css" rel="stylesheet" />
-    <script type="text/javascript" src="../scripts/script.js"></script>
+    <link href="../styles/login.css" rel="stylesheet" / >
+    <script type="text/javascript" src="../scripts/login.js"></script>
+    <script type="text/javascript" src="../scripts/private.js"></script>
   </head>
 
   <body>
@@ -71,8 +72,8 @@
               <div class="form-floating">
                 <input
                   type="password"
-                  id="senha"
-                  name="senha"
+                  id="password"
+                  name="password"
                   class="form-control"
                   id="floatingPassword"
                   placeholder="Password"
@@ -93,7 +94,7 @@
               <button
                 id="botao"
                 class="btn w-75 py-2"
-                onclick="buscaUsuario(document.getElementById('email').value, document.getElementById('senha').value);"
+                onclick="login(document.getElementById('email').value, document.getElementById('password').value);"
                 type="reset"
               >
                 FAZER LOGIN

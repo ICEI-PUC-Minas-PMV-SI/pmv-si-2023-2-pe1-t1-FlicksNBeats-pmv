@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="./scripts/private.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -398,5 +399,12 @@
     closeMenuBtn.addEventListener("click", handleActiveOverlay);
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
+  </script>
+  <script>
+    fetch("http://localhost:3000/posts/1").then((value) => {
+      value.json().then((e) => {
+        console.log("test", e);
+      });
+    });
   </script>
 </html>

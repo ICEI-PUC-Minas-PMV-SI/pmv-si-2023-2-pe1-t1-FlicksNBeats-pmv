@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flicks N Beats</title>
+    <title>Meu Perfil</title>
     <link rel="stylesheet" href="/src/styles/main.css" />
     <link href="../styles/perfil.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,18 +37,6 @@
         <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
       </div>
       <div class="header-menu">
-        <a href="./logado.html">
-          <div class="header-menu-option">
-            <i class="fa-solid"></i>
-            <span>Home</span>
-          </div>
-        </a>
-        <a href="">
-          <div class="header-menu-option">
-            <i class="fa-solid"></i>
-            <span id="nome">UsuarioNome</span>
-          </div>
-        </a>
         <a href="#movies">
           <div class="header-menu-option">
             <i class="fa-solid fa-video"></i>
@@ -61,16 +49,10 @@
             <span>Albums</span>
           </div>
         </a>
-        <!-- <a href="/src/pages/login.html">
+        <a id="leaveBtn">
           <div class="header-menu-option">
-            <i class="fa-solid fa-user"></i>
-            <span>Meu Perfil</span>
-          </div>
-        </a> -->
-        <a href="/src/index.html">
-          <div class="header-menu-option">
-            <i class="fa-solid"></i>
-            <span id="nome" onclick="logout()">Sair</span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Sair</span>
           </div>
         </a>
         <div class="header-menu-collapsed" id="menu">
@@ -92,7 +74,7 @@
         alt="..."
       />
       <ul>
-        <li id="nome2">UsuarioNome</li>
+        <li id="userName">UsuarioNome</li>
         <li id="usuario-descricao">
           Eu gosto de escutar aos mais variados estilos de músicas. Gosto de
           filmes de <br />
@@ -192,62 +174,6 @@
             Ipsum as their default model text
           </div>
         </div>
-        <!-- <div class="review-card">
-          <div class="review-card-content">
-            <div class="review-card-image-wrapper">
-              <img src="/src/assets/movies/1.jpeg" alt="" />
-            </div>
-            <div class="review-card-info">
-              <div class="title">
-                The Last Stop in Yuma County <span class="year">2023</span>
-              </div>
-              <div class="user">
-                <img src="/src/assets/user/icon.jpeg" alt="" />
-                <p class="user-name">Steven Spielberg</p>
-              </div>
-              <div class="rating">
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-comment"></i>
-              </div>
-            </div>
-          </div>
-          <div class="review-card-description">
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-card-content">
-            <div class="review-card-image-wrapper">
-              <img src="/src/assets/movies/1.jpeg" alt="" />
-            </div>
-            <div class="review-card-info">
-              <div class="title">
-                The Last Stop in Yuma County <span class="year">2023</span>
-              </div>
-              <div class="user">
-                <img src="/src/assets/user/icon.jpeg" alt="" />
-                <p class="user-name">Steven Spielberg</p>
-              </div>
-              <div class="rating">
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-star" style="color: #98317f"></i>
-                <i class="fa-solid fa-comment"></i>
-              </div>
-            </div>
-          </div>
-          <div class="review-card-description">
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- REVIEWS -->
@@ -440,4 +366,6 @@
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
+  <script src="../scripts/sair.js"></script>
+  <script src="../scripts/perfil.js"></script>
 </html>

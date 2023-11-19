@@ -10,13 +10,10 @@ server.use(jsonServer.defaults());
 server.use(jsonServer.bodyParser);
 
 const SECRET_KEY = "123456789";
-const expiresIn = "1h";
 
 function isAuthenticated({ email, password }) {
-  return (
-    userdb.users.findIndex(
-      (user) => user.email === email && user.password === password
-    ) !== -1
+  return userdb.users.find(
+    (user) => user.email === email && user.password === password
   );
 }
 
@@ -29,13 +26,30 @@ function createToken(payload) {
 server.post("/auth/login", (req, res) => {
   const { email, password } = req.body;
 
-  if (isAuthenticated({ email, password })) {
-    const access_token = createToken({ email, password });
+  const isAuth = isAuthenticated({ email, password });
+
+  if (isAuth) {
+    const access_token = createToken({ email, password, name: isAuth.name });
 
     res.status(200).json({ access_token });
   } else {
     const status = 401;
     const message = "Incorrect email or password";
+
+    res.status(status).json({ status, message });
+  }
+});
+
+server.post("/verify", (req, res) => {
+  const { access_token } = req.body;
+
+  const validation = jwt.verify(access_token, SECRET_KEY);
+
+  if (validation) {
+    res.status(200).json(validation);
+  } else {
+    const status = 401;
+    const message = "Incorrect information";
 
     res.status(status).json({ status, message });
   }
@@ -52,6 +66,7 @@ server.post("/auth/register", (req, res) => {
     const access_token = createToken({
       email: newUser.email,
       password: newUser.password,
+      name: newUser.name,
     });
 
     res.status(200).json({ access_token });

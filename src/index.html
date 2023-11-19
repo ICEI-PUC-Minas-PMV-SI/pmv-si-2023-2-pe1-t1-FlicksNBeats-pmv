@@ -20,7 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script type="text/javascript" src="./scripts/private.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -49,10 +48,10 @@
             <span>Albums</span>
           </div>
         </a>
-        <a href="./pages/login.html">
+        <a href="./pages/login.html" id="headerLoginBtn">
           <div class="header-menu-option">
             <i class="fa-solid fa-user"></i>
-            <span>Meu Perfil</span>
+            <span id="headerLoginBtnTitle">Entrar</span>
           </div>
         </a>
         <div class="header-menu-collapsed" id="menu">
@@ -71,10 +70,10 @@
       <p class="subtitle">
         Encontre recomendações surpreendentes de filmes, séries e músicas.
       </p>
-      <button class="button">
+      <button class="button" id="createAccountBtn">
         <a href="./pages/cadastro.html">CRIAR CONTA</a>
       </button>
-      <p class="description">
+      <p class="description" id="description">
         Já é membro? Clique <a href="./pages/login.html">aqui</a> para logar
       </p>
     </section>
@@ -400,11 +399,5 @@
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
-  <script>
-    fetch("http://localhost:3000/posts/1").then((value) => {
-      value.json().then((e) => {
-        console.log("test", e);
-      });
-    });
-  </script>
+  <script type="text/javascript" src="./scripts/private.js"></script>
 </html>

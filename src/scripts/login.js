@@ -20,7 +20,7 @@ async function login(email, password) {
     const { access_token } = data;
     localStorage.setItem("access_token", access_token);
 
-    location.href = "http://localhost:5500";
+    location.href = "http://localhost:5500/src";
   } catch (e) {
     window.alert(e);
   }

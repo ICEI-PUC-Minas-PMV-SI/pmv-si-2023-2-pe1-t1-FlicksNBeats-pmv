@@ -1,5 +1,8 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "favorites": [
+    {
+      "poster_path": "/c0DCmfC7Et2K3URnIJ4ahJpeXR2.jpg",
+      "id": 872585
+    }
+  ]
 }

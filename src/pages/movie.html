@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link href="../styles/movie.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f1b24ba51d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img src="/src/assets/logo.svg" alt="" class="header-logo" />
+      <div class="search-bar">
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            onkeypress="handle(event)"
+          />
+        </form>
+        <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
+      </div>
+      <div class="header-menu">
+        <a href="#movies">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes/Séries</span>
+          </div>
+        </a>
+        <a href="#albuns">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-music"></i>
+            <span>Albums</span>
+          </div>
+        </a>
+        <div class="header-menu-collapsed" id="menu">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER -->
+    <section class="main">
+      <img src="../assets/background-perfil_xl.jpg" class="main-background"
+      id="movieBackdrop"/ >
+      <div class="main-gradient"></div>
+    </section>
+    <!-- SIGN UP -->
+    <section class="movie-info">
+      <img
+        id="moviePoster"
+        class="movie-poster"
+        src="/src/assets/user/useravatar.png"
+      />
+      <div class="movie-wrapper">
+        <h2 class="movie-title" id="movieTitle">Name</h2>
+        <p class="movie-description" id="movieDescription">
+          Eu gosto de escutar aos mais variados estilos de músicas. Gosto de
+          filmes de <br />
+          terror e amo sitcoms.
+        </p>
+        <div class="movie-info-wrapper">
+          <div class="movie-credits">
+            <p>Diretor(a): <b id="movieDirector"></b></p>
+            <p>Gênero: <b id="movieGenres"></b></p>
+          </div>
+          <div class="movie-rating">
+            <p class="title">AVALIAÇÃO</p>
+            <i class="fa-solid fa-star rating-star" style="color: #98317f"></i>
+            <p id="movieVoteTotal"><b id="movieVoteAverage">8.7</b>/10</p>
+            <p id="movieVoteCount">4.1k</p>
+          </div>
+        </div>
+        <button id="favoriteBtn">
+          FAVORITAR <i id="favoriteBtnIcon" class="fa-solid fa-heart"></i>
+        </button>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
+  </body>
+  <script>
+    // Input go to search page
+    function handle(e) {
+      if (e.keyCode === 13) {
+        e.preventDefault();
+        window.location = "http://127.0.0.1:5500/src/pages/pesquisar.html";
+      }
+    }
+  </script>
+  <script src="../scripts/movie.js  "></script>
+</html>

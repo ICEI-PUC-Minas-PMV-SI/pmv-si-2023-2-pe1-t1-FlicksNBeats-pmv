@@ -42,3 +42,16 @@
     content: url("../assets/background-perfil_xl.jpg");
   }
 }
+
+#moviesGallery {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.favorite-movie {
+  width: 135px;
+  height: 200px;
+  cursor: pointer;
+}

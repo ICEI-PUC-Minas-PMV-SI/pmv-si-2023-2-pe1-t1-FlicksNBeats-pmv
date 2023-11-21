@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
     <script
       src="https://kit.fontawesome.com/f1b24ba51d.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
@@ -85,10 +85,7 @@
         <p class="carousel-title">Picks do momento!</p>
         <p class="carousel-subtitle">Filmes/Séries</p>
       </div>
-      <div
-        class="gallery js-flickity"
-        data-flickity-options='{ "wrapAround": true , "pageDots": false, "contain": true }'
-      >
+      <div class="gallery">
         <div class="gallery-cell">
           <img src="./assets/movies/1.jpeg" alt="" />
         </div>
@@ -400,4 +397,5 @@
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
   <script type="text/javascript" src="./scripts/private.js"></script>
+  <script type="text/javascript" src="./scripts/carousel.js"></script>
 </html>

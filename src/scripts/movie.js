@@ -1,6 +1,5 @@
 function fetchMovie() {
-  const movieToken =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2N2ZmYTVlNWY0YzYxMzVhNWUzODMzYTcyYjRiNzA4NSIsInN1YiI6IjY1NTBmNjcyMDgxNmM3MDExYTA5NmJlYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.T8-TnxRYo719zDF0yhvWGlhwkExROr3YUW69OWCqSOE";
+  const movieToken = "";
 
   const options = {
     method: "GET",

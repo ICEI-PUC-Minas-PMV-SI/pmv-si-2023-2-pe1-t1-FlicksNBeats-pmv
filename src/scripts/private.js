@@ -31,8 +31,6 @@ async function setupUser() {
 
     return;
   }
-
-  console.log("NO TOKEN");
 }
 
 setupUser();

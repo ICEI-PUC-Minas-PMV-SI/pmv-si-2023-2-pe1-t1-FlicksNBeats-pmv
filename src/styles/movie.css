@@ -294,8 +294,8 @@ a {
   color: white;
 }
 
-#favoriteBtn .enabled {
-  background-color: #94a1b2;
+#favoriteBtn.enabled {
+  background-color: #98317f;
 }
 
 #favoriteBtn:active {

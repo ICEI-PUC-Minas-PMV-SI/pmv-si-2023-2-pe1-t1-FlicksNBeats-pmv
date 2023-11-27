@@ -1,6 +1,11 @@
-function fetchMovie() {
-  const movieToken = "";
+const movieId = localStorage.getItem("selectedMovieId");
+const token = localStorage.getItem("access_token");
 
+const movieToken = "";
+
+async function fetchMovieDetails() {}
+
+function fetchMovie() {
   const options = {
     method: "GET",
     headers: {
@@ -8,8 +13,6 @@ function fetchMovie() {
       Authorization: `Bearer ${movieToken}`,
     },
   };
-
-  const movieId = localStorage.getItem("selectedMovieId");
 
   fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=pt-BR`, options)
     .then((response) => response.json())
@@ -51,68 +54,92 @@ function fetchMovie() {
       movieDirector.innerHTML = director.name;
     })
     .catch((err) => console.error(err));
+}
 
-  const token = localStorage.getItem("access_token");
+async function removeFavorite(id) {
+  await fetch(`http://localhost:3000/favorites/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      authorization: `Bearer ${token}`,
+    },
+  });
 
+  const favoriteBtn = document.getElementById("favoriteBtn");
+  const favoriteBtnIcon = document.getElementById("favoriteBtnIcon");
+
+  favoriteBtnIcon.classList.remove("fa-check");
+  favoriteBtnIcon.classList.add("fa-heart");
+  favoriteBtn.classList.remove("enabled");
+}
+
+async function addFavorite(id) {
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${movieToken}`,
+    },
+  };
+
+  const { poster_path } = await fetch(
+    `https://api.themoviedb.org/3/movie/${movieId}?language=pt-BR`,
+    options
+  ).then((response) => response.json());
+
+  await fetch("http://localhost:3000/favorites", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ poster_path, id }),
+  });
+
+  const favoriteBtn = document.getElementById("favoriteBtn");
+  const favoriteBtnIcon = document.getElementById("favoriteBtnIcon");
+
+  favoriteBtnIcon.classList.remove("fa-heart");
+  favoriteBtnIcon.classList.add("fa-check");
+  favoriteBtn.classList.add("enabled");
+}
+
+async function handleFavorite() {
+  const favoriteBtnIcon = document.getElementById("favoriteBtnIcon");
+
+  if (favoriteBtnIcon.classList.contains("fa-check")) {
+    await removeFavorite(movieId);
+  } else {
+    await addFavorite(movieId);
+  }
+}
+
+function fetchFavorite() {
   fetch("http://localhost:3000/favorites", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       authorization: `Bearer ${token}`,
     },
-  }).then(async (data) => {
-    const favoriteMovies = await data.json();
-    const findMovie = favoriteMovies.find((movie) => movie.id == movieId);
+  })
+    .then((response) => response.json())
+    .then((favorites) => {
+      const findMovie = favorites.find((movie) => movie.id === movieId);
+      const favoriteBtn = document.getElementById("favoriteBtn");
+      const favoriteBtnIcon = document.getElementById("favoriteBtnIcon");
 
-    const favoriteBtnIcon = document.getElementById("favoriteBtnIcon");
-
-    if (findMovie) {
-      favoriteBtnIcon.classList.remove("fa-heart");
-      favoriteBtnIcon.classList.add("fa-check");
-    } else {
-      favoriteBtnIcon.classList.remove("fa-check");
-      favoriteBtnIcon.classList.add("fa-heart");
-    }
-
-    const favoriteBtn = document.getElementById("favoriteBtn");
-
-    favoriteBtn.addEventListener("click", async () => {
-      if (favoriteBtnIcon.classList.contains("fa-check")) {
-        await fetch(`http://localhost:3000/favorites/${movieId}`, {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            authorization: `Bearer ${token}`,
-          },
-        });
-
+      if (findMovie) {
+        favoriteBtnIcon.classList.remove("fa-heart");
+        favoriteBtnIcon.classList.add("fa-check");
+      } else {
         favoriteBtnIcon.classList.remove("fa-check");
         favoriteBtnIcon.classList.add("fa-heart");
-      } else {
-        await fetch(
-          `https://api.themoviedb.org/3/movie/${movieId}?language=pt-BR`,
-          options
-        )
-          .then((response) => response.json())
-          .then(async (response) => {
-            const { poster_path, id } = response;
-
-            const res = await fetch("http://localhost:3000/favorites", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                authorization: `Bearer ${token}`,
-              },
-              body: JSON.stringify({ poster_path, id }),
-            });
-
-            // favoriteBtnIcon.classList.remove("fa-heart");
-            // favoriteBtnIcon.classList.add("fa-check");
-          })
-          .catch((err) => console.error(err));
+        favoriteBtn.classList.add("enabled");
       }
+
+      favoriteBtn.addEventListener("click", handleFavorite);
     });
-  });
 }
 
 fetchMovie();
+fetchFavorite();

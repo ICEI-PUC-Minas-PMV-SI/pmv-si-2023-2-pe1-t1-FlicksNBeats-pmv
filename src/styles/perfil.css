@@ -1,50 +1,57 @@
 #usuario-perfil {
-   flex-direction: row;
- }
+  flex-direction: row;
+}
 
- #usuario-foto {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
- }
+#usuario-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
 
- #usuario-perfil ul {
-    padding-left: 10px;
+#usuario-perfil ul {
+  padding-left: 10px;
+}
+
+#usuario-perfil2 {
+  padding-left: 110px;
+}
+
+#userName {
+  font-size: 50px;
+}
+
+#usuario-descricao {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-background {
+    content: url("../assets/background-perfil_sm.jpg");
   }
+}
 
-  #usuario-perfil2 {
-    padding-left: 110px;
+@media screen and (min-width: 768px) {
+  .main-background {
+    content: url("../assets/background-perfil_xl.jpg");
   }
+}
 
-  #nome2 {
-    font-size: 50px;
-   }
-
-  #usuario-descricao {
-    font-size: 15px;
-    padding-top: 10px;
+@media (min-width: 1200px) {
+  .main-background {
+    content: url("../assets/background-perfil_xl.jpg");
   }
+}
 
-  @media screen and (max-width: 767px) {
-    .main-background {
-      content: url("../assets/background-perfil_sm.jpg");
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .main-background {
-      content: url("../assets/background-perfil_xl.jpg");
+#moviesGallery {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 10px;
+}
 
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .main-background {
-      content: url("../assets/background-perfil_xl.jpg");
-      
-    }
-  }
-
-
-
-
+.favorite-movie {
+  width: 135px;
+  height: 200px;
+  cursor: pointer;
+}

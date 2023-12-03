@@ -247,9 +247,11 @@
   <script>
     // Input go to search page
     function handle(e) {
-      if (e.keyCode === 13) {
+      const searchedMovie = e.target?.value;
+      if (e.keyCode === 13 && searchedMovie) {
         e.preventDefault();
-        window.location = "http://127.0.0.1:5500/src/pages/pesquisar.html";
+        localStorage.setItem("searchedMovie", searchedMovie);
+        window.location = `http://localhost:5500/src/pages/pesquisar.html`;
       }
     }
   </script>

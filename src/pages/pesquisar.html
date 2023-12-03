@@ -28,6 +28,7 @@
       <div class="search-bar">
         <form action="#">
           <input
+            id="searchInput"
             type="text"
             placeholder="Pesquisar"
             onkeypress="handle(event)"
@@ -63,17 +64,8 @@
     </header>
     <section class="found">
       <p>Filmes encontrados</p>
-      <div class="found-items">
-        <img src="../assets/movies/1.jpeg" alt="" />
-        <img src="../assets/movies/2.jpeg" alt="" />
-        <img src="../assets/movies/3.jpeg" alt="" />
-      </div>
-    </section>
-    <section class="found">
-      <p>Séries encontrados</p>
-      <div class="found-items">
-        <img src="../assets/movies/4.jpeg" alt="" />
-      </div>
+      <p id="loadingPlaceholder">Carregando filmes...</p>
+      <div class="found-items" id="foundItems"></div>
     </section>
     <!-- FOOTER -->
     <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
@@ -116,15 +108,28 @@
           <i class="fa-solid fa-circle-xmark"></i>
         </div>
         <span class="filter-title">Gêneros filtrados:</span>
-        <div class="options-wrapper">
-          <p class="filter-option">Ação</p>
-          <p class="filter-option">Comédia</p>
-          <p class="filter-option">Suspense</p>
-          <p class="filter-option">Terror</p>
-          <p class="filter-option">Romance</p>
-          <p class="filter-option">Drama</p>
-          <p class="filter-option">Documentário</p>
-          <p class="filter-option">Ficção Científica</p>
+        <div class="options-wrapper" id="filterOptions">
+          <p class="filter-option" id="28" data-value="true">Ação</p>
+          <p class="filter-option" id="12" data-value="true">Aventura</p>
+          <p class="filter-option" id="16" data-value="true">Animação</p>
+          <p class="filter-option" id="35" data-value="true">Comédia</p>
+          <p class="filter-option" id="80" data-value="true">Crime</p>
+          <p class="filter-option" id="99" data-value="true">Documentário</p>
+          <p class="filter-option" id="18" data-value="true">Drama</p>
+          <p class="filter-option" id="10751" data-value="true">Familia</p>
+          <p class="filter-option" id="14" data-value="true">Fantasia</p>
+          <p class="filter-option" id="36" data-value="true">História</p>
+          <p class="filter-option" id="27" data-value="true">Terror</p>
+          <p class="filter-option" id="10402" data-value="true">Musical</p>
+          <p class="filter-option" id="9648" data-value="true">Mistério</p>
+          <p class="filter-option" id="10749" data-value="true">Romance</p>
+          <p class="filter-option" id="878" data-value="true">
+            Ficção Cientifica
+          </p>
+          <p class="filter-option" id="10770" data-value="true">TV</p>
+          <p class="filter-option" id="53" data-value="true">Suspense</p>
+          <p class="filter-option" id="10752" data-value="true">Guerra</p>
+          <p class="filter-option" id="37" data-value="true">Faroeste</p>
         </div>
         <div class="filter-apply" id="applyFilterBtn">
           <span>APLICAR</span>
@@ -132,6 +137,17 @@
       </div>
     </section>
   </body>
+  <script>
+    // Input go to search page
+    function handle(e) {
+      const searchedMovie = e.target?.value;
+      if (e.keyCode === 13 && searchedMovie) {
+        e.preventDefault();
+        localStorage.setItem("searchedMovie", searchedMovie);
+        getSearchResults();
+      }
+    }
+  </script>
   <script>
     // Mobile menu overlay
     const menuButton = document.getElementById("menu");
@@ -157,6 +173,7 @@
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
+  <script src="../scripts/pesquisar.js  "></script>
   <script>
     // Filter popup
     const filterBtn = document.getElementById("filterBtn");
@@ -176,6 +193,9 @@
 
     filterBtn.addEventListener("click", handleFilterPopup);
     closeFilterBtn.addEventListener("click", handleFilterPopup);
-    applyFilterBtn.addEventListener("click", handleFilterPopup);
+    applyFilterBtn.addEventListener("click", async () => {
+      await getSearchResults();
+      handleFilterPopup();
+    });
   </script>
 </html>

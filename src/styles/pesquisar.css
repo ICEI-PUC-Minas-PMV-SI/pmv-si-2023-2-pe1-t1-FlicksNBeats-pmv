@@ -201,6 +201,11 @@ footer {
   background-color: white;
   padding: 4px 8px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-option[data-value="false"] {
+  background-color: #94a1b2;
 }
 
 .filter-apply {
@@ -222,7 +227,7 @@ footer {
 .found {
   display: grid;
   gap: 16px;
-  padding: 0px 60px;
+  padding: 24px 60px 0 60px;
   margin-bottom: 24px;
 }
 
@@ -246,6 +251,7 @@ footer {
 }
 
 .found-items img {
+  cursor: pointer;
   max-height: 200px;
 }
 

@@ -53,41 +53,53 @@
         </div>
       </div>
     </header>
-    <!-- HEADER -->
-    <section class="main">
-      <img src="../assets/background-perfil_xl.jpg" class="main-background"
-      id="movieBackdrop"/ >
-      <div class="main-gradient"></div>
-    </section>
-    <!-- SIGN UP -->
-    <section class="movie-info">
-      <img
-        id="moviePoster"
-        class="movie-poster"
-        src="/src/assets/user/useravatar.png"
-      />
-      <div class="movie-wrapper">
-        <h2 class="movie-title" id="movieTitle">Name</h2>
-        <p class="movie-description" id="movieDescription">
-          Eu gosto de escutar aos mais variados estilos de músicas. Gosto de
-          filmes de <br />
-          terror e amo sitcoms.
-        </p>
-        <div class="movie-info-wrapper">
-          <div class="movie-credits">
-            <p>Diretor(a): <b id="movieDirector"></b></p>
-            <p>Gênero: <b id="movieGenres"></b></p>
+    <section class="movie-container">
+      <div class="movie-info">
+        <img
+          id="moviePoster"
+          class="movie-poster"
+          src="/src/assets/user/useravatar.png"
+        />
+        <div class="movie-wrapper">
+          <h2 class="movie-title" id="movieTitle">Name</h2>
+          <p class="movie-description" id="movieDescription">
+            Eu gosto de escutar aos mais variados estilos de músicas. Gosto de
+            filmes de <br />
+            terror e amo sitcoms.
+          </p>
+          <div class="movie-info-wrapper">
+            <div class="movie-credits">
+              <p>Diretor(a): <b id="movieDirector"></b></p>
+              <p>Gênero: <b id="movieGenres"></b></p>
+            </div>
+            <div class="movie-rating">
+              <p class="title">AVALIAÇÃO</p>
+              <i
+                class="fa-solid fa-star rating-star"
+                style="color: #98317f"
+              ></i>
+              <p id="movieVoteTotal"><b id="movieVoteAverage">8.7</b>/10</p>
+              <p id="movieVoteCount">4.1k</p>
+            </div>
           </div>
-          <div class="movie-rating">
-            <p class="title">AVALIAÇÃO</p>
-            <i class="fa-solid fa-star rating-star" style="color: #98317f"></i>
-            <p id="movieVoteTotal"><b id="movieVoteAverage">8.7</b>/10</p>
-            <p id="movieVoteCount">4.1k</p>
-          </div>
+          <button id="favoriteBtn">
+            FAVORITAR <i id="favoriteBtnIcon" class="fa-solid fa-heart"></i>
+          </button>
         </div>
-        <button id="favoriteBtn">
-          FAVORITAR <i id="favoriteBtnIcon" class="fa-solid fa-heart"></i>
-        </button>
+      </div>
+      <div class="review-container">
+        <h2 class="review-container-title">Reviews</h2>
+        <div class="movie-rating-form">
+          <textarea
+            id="reviewContent"
+            name="reviewContent"
+            rows="5"
+            placeholder="Escreva um comentário..."
+          ></textarea>
+          <button id="postReview">POSTAR</button>
+        </div>
+        <p id="reviewPlaceholder">Carregando reviews...</p>
+        <div class="review-container-cards" id="reviewsContainer"></div>
       </div>
     </section>
     <!-- FOOTER -->

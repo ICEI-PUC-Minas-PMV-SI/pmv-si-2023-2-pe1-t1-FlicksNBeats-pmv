@@ -219,33 +219,6 @@ footer {
   margin-top: 10px;
 }
 
-/* CHECKBOX FILTER */
-
-.type-filter {
-  display: grid;
-  gap: 4px;
-  padding-left: 115px;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .type-filter {
-    padding-left: 14px;
-  }
-}
-
-.type-filter-title {
-  justify-self: flex-start;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.type-filter-options {
-  display: flex;
-  gap: 4px;
-  font-size: 14px;
-}
-
 .found {
   display: grid;
   gap: 16px;

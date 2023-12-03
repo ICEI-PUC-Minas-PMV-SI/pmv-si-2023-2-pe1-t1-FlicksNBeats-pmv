@@ -1,8 +1,7 @@
 const movieId = localStorage.getItem("selectedMovieId");
 const token = localStorage.getItem("access_token");
 
-const movieToken =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZDQzMzgzZWIxNTlmY2MxM2UwMDNhODk2Y2Y5ZDI0MiIsInN1YiI6IjY1NTBmNjcyMDgxNmM3MDExYTA5NmJlYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.760w9_XlhviKBTx_t8D_y_n5oTM1TKFyICrD2DkYK8g";
+const movieToken = "";
 
 async function fetchMovieDetails() {}
 

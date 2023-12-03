@@ -5,5 +5,15 @@
       "id": "507089"
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "author_details": {
+        "rating": 10,
+        "movieId": "507089",
+        "name": "João Oliveira"
+      },
+      "content": "Filme muito bom!",
+      "id": 1
+    }
+  ]
 }

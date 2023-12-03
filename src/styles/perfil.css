@@ -1,5 +1,6 @@
 #usuario-perfil {
   flex-direction: row;
+  gap: 24px;
 }
 
 #usuario-foto {
@@ -18,16 +19,26 @@
 
 #userName {
   font-size: 50px;
+  text-align: start;
 }
 
 #usuario-descricao {
+  text-align: start;
   font-size: 15px;
   padding-top: 10px;
+}
+
+.wrapper {
+  padding: 48px 20px 0px 20px;
 }
 
 @media screen and (max-width: 767px) {
   .main-background {
     content: url("../assets/background-perfil_sm.jpg");
+  }
+
+  #usuario-perfil {
+    flex-direction: column;
   }
 }
 
@@ -54,4 +65,91 @@
   width: 135px;
   height: 200px;
   cursor: pointer;
+}
+
+/*STARS*/
+:root {
+  --star-size: 20px;
+  --star-color: #fff;
+  --star-background: #98317f;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
+
+  &::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(
+      90deg,
+      var(--star-background) var(--percent),
+      var(--star-color) var(--percent)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* REVIEW */
+
+.review-container {
+  display: grid;
+  gap: 12px;
+}
+
+.review-container-title {
+  justify-self: start;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.review-container-cards {
+  display: grid;
+  gap: 12px;
+}
+
+.review-card {
+  display: grid;
+  gap: 8px;
+}
+
+.review-card-user {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-card-user p {
+  color: #94a1b2;
+  font-size: 12px;
+}
+
+.review-card-user img {
+  max-width: 24px;
+  border-radius: 50%;
+}
+
+.review-card-rating {
+  justify-self: start;
+}
+
+.review-card-content {
+  font-size: 12px;
+  display: -webkit-box;
+
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: start;
 }

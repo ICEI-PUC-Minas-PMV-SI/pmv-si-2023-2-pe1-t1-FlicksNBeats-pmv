@@ -169,7 +169,10 @@ async function fetchReviews() {
       },
     }).then((response) => response.json());
 
-    const reviewsRes = [...localRes, ...res.results];
+    const reviewsRes = [
+      ...localRes.filter((movie) => movie.author_details.movieId === movieId),
+      ...res.results,
+    ];
 
     if (reviewsRes.length) {
       const reviewsContainer = document.getElementById("reviewsContainer");
@@ -237,6 +240,7 @@ function bindReviewForm() {
 
         const author_details = {
           rating: 10,
+          movieId,
           name,
         };
 

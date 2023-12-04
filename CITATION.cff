@@ -1,29 +1,25 @@
-cff-version: 1.0.1
+
+cff-version: 1.2.0
+title: FlicksNBeats
 message: Please cite this software using these metadata.
-title:
+type: software
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
-    affiliation: PUC Minas
-    family-names:
-    given-names:
+  - given-names: João Pedro Silva de Oliveira
+    affiliation: PUC
+  - given-names: Filipe Acacio Costa
+    affiliation: PUC
+  - given-names: Natália Kiefer Ferreira
+    affiliation: PUC
+repository-code: >-
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t1-FlicksNBeats-pmv/tree/main
+abstract: >-
+  Um site que busca mostrar vários álbuns, filmes e séries
+  para qualquer usuário que deseja encontrar algo para
+  assistir em seu tempo livre. 
 keywords:
-  -
-  -
-repository-code:
+  - Filmes
+  - Séries
+  - Álbuns
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: '2023-06-30'

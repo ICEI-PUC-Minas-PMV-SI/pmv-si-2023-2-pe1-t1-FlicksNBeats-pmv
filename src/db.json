@@ -4,5 +4,16 @@
       "poster_path": "/1yUbmAiw2cUSpyXNIaiST7JzCtG.jpg",
       "id": "507089"
     }
+  ],
+  "reviews": [
+    {
+      "author_details": {
+        "rating": 10,
+        "movieId": "507089",
+        "name": "João Oliveira"
+      },
+      "content": "Filme muito bom!",
+      "id": 1
+    }
   ]
 }

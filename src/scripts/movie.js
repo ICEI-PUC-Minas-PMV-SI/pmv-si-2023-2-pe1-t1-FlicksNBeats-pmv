@@ -17,7 +17,7 @@ function fetchMovie() {
   fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=pt-BR`, options)
     .then((response) => response.json())
     .then((response) => {
-      const movieBackdrop = document.getElementById("movieBackdrop");
+      const movieInfo = document.getElementById("movieInfo");
       const moviePoster = document.getElementById("moviePoster");
       const movieDescription = document.getElementById("movieDescription");
       const movieTitle = document.getElementById("movieTitle");
@@ -32,7 +32,12 @@ function fetchMovie() {
         return acc;
       }, response.genres[0].name);
 
-      movieBackdrop.src = `https://image.tmdb.org/t/p/original/${response.backdrop_path}`;
+      const body = document.body;
+
+      body.style.backgroundImage = `url('https://image.tmdb.org/t/p/original/${response.backdrop_path}')`;
+      body.style.backgroundRepeat = "no-repeat";
+      body.style.backgroundSize = "cover"; // Adjust based on your preference
+
       moviePoster.src = `https://image.tmdb.org/t/p/original/${response.poster_path}`;
       movieDescription.innerHTML = response.overview;
       movieTitle.innerHTML = response.title;
@@ -141,5 +146,122 @@ function fetchFavorite() {
     });
 }
 
+async function fetchReviews() {
+  const reviewPlaceholder = document.getElementById("reviewPlaceholder");
+
+  try {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=pt-BR&page=1`,
+      {
+        method: "GET",
+        headers: {
+          accept: "application/json",
+          Authorization: `Bearer ${movieToken}`,
+        },
+      }
+    ).then((response) => response.json());
+
+    const localRes = await fetch(`http://localhost:3000/reviews`, {
+      method: "GET",
+      headers: {
+        accept: "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((response) => response.json());
+
+    const reviewsRes = [
+      ...localRes.filter((movie) => movie.author_details.movieId === movieId),
+      ...res.results,
+    ];
+
+    if (reviewsRes.length) {
+      const reviewsContainer = document.getElementById("reviewsContainer");
+
+      const reviews = reviewsRes.reduce((acc, review) => {
+        const rating = (Number(review.author_details.rating) / 2).toFixed();
+
+        const reviewCard = `
+        <div class="review-card">
+          <div class="review-card-user">
+            <img 
+            src="${
+              review.author_details?.avatar_path
+                ? `https://image.tmdb.org/t/p/original${review.author_details?.avatar_path}`
+                : "/src/assets/user/useravatar.png"
+            }" alt="" />
+            <p>${
+              review.author_details?.name?.length
+                ? review.author_details?.name
+                : "Anônimo(a)"
+            }</p>
+          </div>
+          <div class="review-card-rating">
+            <div class="Stars" style="--rating: ${rating}.0;"></div>
+            <i class="fa-solid fa-comment"></i>
+          </div>
+          <div class="review-card-content">
+          ${review.content}
+          </div>
+        </div>
+        `;
+
+        acc += reviewCard;
+
+        return acc;
+      }, "");
+
+      reviewsContainer.innerHTML = reviews;
+
+      reviewPlaceholder.remove();
+    } else {
+      reviewPlaceholder.innerHTML =
+        "Nenhuma review disponível para esse filme.";
+    }
+  } catch (e) {
+    reviewPlaceholder.innerHTML = "Não foi possível carregar as reviews =(";
+  }
+}
+
+function bindReviewForm() {
+  const postBtn = document.getElementById("postReview");
+
+  postBtn.addEventListener("click", async () => {
+    const content = document.getElementById("reviewContent")?.value;
+
+    if (content.length) {
+      try {
+        const { name } = await fetch("http://localhost:3000/verify", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ access_token: token }),
+        }).then((response) => response.json());
+
+        const author_details = {
+          rating: 10,
+          movieId,
+          name,
+        };
+
+        await fetch("http://localhost:3000/reviews", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ author_details, content }),
+        });
+      } catch (e) {
+        window.alert("Não foi possível enviar o formulário!");
+      }
+    } else {
+      window.alert("Preencha o formulário!");
+    }
+  });
+}
+
 fetchMovie();
 fetchFavorite();
+fetchReviews();
+bindReviewForm();

@@ -12,13 +12,11 @@
 <div style="display: inline_block" <p align="center"> 
   <img align="center" alt="Filipe Acacio Costa" height="128" width="128" src="https://i.imgur.com/Une3CF0.jpg">
   <img align="center" alt="Natália Kiefer Ferreira" height="128" width="128" src="https://i.imgur.com/79bEaWk.jpg">
-  <img align="center" alt="Mariana Carvalho Silva Teixeira" height="128" width="128" src="https://i.imgur.com/3sGUEdj.jpg">
   <img align="center" alt="João Pedro Silva de Oliveira" height="128" width="128" src="https://i.imgur.com/4zE1XnC.jpg">
   </div> <br>
 
 <p align="center"> Filipe Acacio Costa
 <p align="center"> Natália Kiefer Ferreira
-<p align="center"> Mariana Carvalho Silva Teixeira
 <p align="center"> João Pedro Silva de Oliveira
 
 ## <p align="center"> Orientador

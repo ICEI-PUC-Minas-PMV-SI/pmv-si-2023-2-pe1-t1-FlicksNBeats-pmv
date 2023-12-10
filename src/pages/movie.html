@@ -24,7 +24,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <img src="/src/assets/logo.svg" alt="" class="header-logo" />
+      <a href="/src/index.html"><img src="/src/assets/logo.svg" alt="" class="header-logo"/></a>
       <div class="search-bar">
         <form action="#">
           <input
@@ -36,20 +36,38 @@
         <i class="fas fa-search search-bar-icon" style="color: #94a1b2"></i>
       </div>
       <div class="header-menu">
-        <a href="#movies">
+        <a href="/src/index.html#movies">
           <div class="header-menu-option">
             <i class="fa-solid fa-video"></i>
             <span>Filmes/Séries</span>
           </div>
         </a>
-        <a href="#albuns">
+        <a href="/src/index.html#albuns">
           <div class="header-menu-option">
             <i class="fa-solid fa-music"></i>
             <span>Albums</span>
           </div>
         </a>
-        <div class="header-menu-collapsed" id="menu">
-          <i class="fa-solid fa-bars fa-lg"></i>
+        <a href="/src/pages/perfil.html" id="perfil">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu perfil</span>
+          </div>
+        </a>
+        <a href="http://localhost:5500/src/index.html" id="leaveBtn">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Sair</span>
+          </div>
+        </a>
+        <a href="/src/pages/login.html" id="login">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Entrar</span>
+          </div>
+        </a>
+        <div style="cursor: pointer;" onclick="window.location='perfil.html';" class="header-menu-collapsed" id="menu">
+          <i class="fa-solid fa-reply fa-lg"></i>
         </div>
       </div>
     </header>
@@ -104,6 +122,8 @@
     </section>
     <!-- FOOTER -->
     <footer>©2023 Flicks N Beats. All Rights Reserved.</footer>
+    <!-- FOOTER -->
+    
   </body>
   <script>
     // Input go to search page
@@ -116,5 +136,6 @@
       }
     }
   </script>
-  <script src="../scripts/movie.js  "></script>
+  <script src="/src/scripts/sair.js"></script>
+  <script src="/src/scripts/movie.js"></script>
 </html>

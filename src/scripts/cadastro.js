@@ -28,7 +28,9 @@ async function cadastrar() {
       const { access_token } = data;
       localStorage.setItem("access_token", access_token);
 
-      location.href = "http://localhost:5500";
+       window.location.href = "login.html";
+       window.alert("Cadastro realizado com sucesso.");
+      //  location.href = "http://localhost:5500";
     } catch (e) {
       window.alert(e);
     }

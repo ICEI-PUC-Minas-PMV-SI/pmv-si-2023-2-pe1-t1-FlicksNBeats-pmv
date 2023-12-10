@@ -27,6 +27,8 @@ async function setupUser() {
 
       description.innerHTML = `Bem-vindo de volta, ${data.name.split(" ")[0]}!`;
       description.classList.add("description-welcome");
+      leaveBtn.style.display = '';
+      perfiljs.style.display = '';
     }
 
     return;

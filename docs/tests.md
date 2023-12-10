@@ -1,20 +1,5 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
-
-- O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
-- O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo.
-
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
-
-A documentação dos testes é dividida nas seguintes seções:
-
-- [Testes](#testes)
-- [Teste de Software](#teste-de-software)
-  - [Plano de Testes de Software](#plano-de-testes-de-software)
-  - [Registro dos Testes de Software](#registro-dos-testes-de-software)
-  - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
-
 # Teste de Software
 
 ## Plano de Testes de Software
@@ -69,35 +54,35 @@ A documentação dos testes é dividida nas seguintes seções:
 
 ## Registro dos Testes de Software
 
-| _Caso de Teste_                   | _TC-01 - Validar criação de conta_                                                |
-| --------------------------------- | --------------------------------------------------------------------------------- |
-| Requisito Associado               | RF-001 - O sistema deve permitir cadastrar usuário para utilização da plataforma. |
-| Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t                       |
+| _Caso de Teste_                   | _TC-01 - Validar criação de conta_                                                                                            |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-001 - O sistema deve permitir cadastrar usuário para utilização da plataforma.                                             |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/ESi4EoQzVqRCtAadxV5XS64B97Unpu0E-b9p57-MNDu8rQ |
 
-| _Caso de Teste_                   | _TC-02 - Criar conta_                                                             |
-| --------------------------------- | --------------------------------------------------------------------------------- |
-| Requisito Associado               | RF-001 - O sistema deve permitir cadastrar usuário para utilização da plataforma. |
-| Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar                       |
+| _Caso de Teste_                   | _TC-02 - Criar conta_                                                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-001 - O sistema deve permitir cadastrar usuário para utilização da plataforma.                                             |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/EdJvuWT-pAdMjNPi2ibNOdwBg00ZL0gDAX7tvhN1u_1xTw |
 
-| _Caso de Teste_                   | _TC-03 - Pesquisar Filmes/Séries por gênero_                                                |
-| --------------------------------- | ------------------------------------------------------------------------------------------- |
-| Requisito Associado               | RF-004 - O sistema deve permitir que o usuário possa pesquisar filmes e músicas por gênero. |
-| Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t                                 |
+| _Caso de Teste_                   | _TC-03 - Pesquisar Filmes/Séries por gênero_                                                                                                                                                                                                                                                                                       |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-004 - O sistema deve permitir que o usuário possa pesquisar filmes e músicas por gênero.                                                                                                                                                                                                                                        |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/EYAjM1_y8SROpuD2jf2fSR4BsfJiM85LeEc9AAi-UrmTiw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yJCxJ3 |
 
-| _Caso de Teste_                   | _TC-04 - Página de lançamentos recentes_                                                                            |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Requisito Associado               | RF-005 - O sistema deve informar ao usuário os lançamentos recentes de filmes e músicas de acordo com o seu perfil. |
-| Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar                                                         |
+| _Caso de Teste_                   | _TC-04 - Página de lançamentos recentes_                                                                                                                                                                                                                                                                                           |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-005 - O sistema deve informar ao usuário os lançamentos recentes de filmes e músicas de acordo com o seu perfil.                                                                                                                                                                                                                |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/EYFVYbMuiPZOoS347y8wNVoBseqA-R4vY9Xj91RK9OmGWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1dSDNl |
 
-| _Caso de Teste_                   | _TC-05 - Escrever crítica sobre filme/série_                                                       |
-| --------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Requisito Associado               | RF-007 - O sistema deve permitir que o usuário dê notas e escreva críticas sobre filmes e músicas. |
-| Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t                                        |
+| _Caso de Teste_                   | _TC-05 - Escrever crítica sobre filme/série_                                                                                                                                                                                                                                                                                       |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-007 - O sistema deve permitir que o usuário dê notas e escreva críticas sobre filmes e músicas.                                                                                                                                                                                                                                 |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/Ea8znK-n9PNAoXRgdYI4pbwBRzSVy8Fp1PbPp4jDRq-R-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fctuc8 |
 
-| _Caso de Teste_                   | _TC-06 - Lista de favoritas pública_                            |
-| --------------------------------- | --------------------------------------------------------------- |
-| Requisito Associado               | RF-009 - O sistema deve permitir publicar a lista de favoritos. |
-| Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar     |
+| _Caso de Teste_                   | _TC-06 - Lista de favoritas pública_                                                                                                                                                                                                                                                                                               |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Requisito Associado               | RF-009 - O sistema deve permitir publicar a lista de favoritos.                                                                                                                                                                                                                                                                    |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1485231_sga_pucminas_br/Ef2fiDD-m9BCtqhLe-wC9acB8eprpXyRWUV7E_utXP_XBA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=if8NgO |
 
 ## Avaliação dos Testes de Software
 

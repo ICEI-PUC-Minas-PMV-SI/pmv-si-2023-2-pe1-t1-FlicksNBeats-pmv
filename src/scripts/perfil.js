@@ -1,5 +1,6 @@
 const userName = document.getElementById("userName");
 const token = localStorage.getItem("access_token");
+leaveBtn.style.display = '';
 
 fetch("http://localhost:3000/verify", {
   method: "POST",

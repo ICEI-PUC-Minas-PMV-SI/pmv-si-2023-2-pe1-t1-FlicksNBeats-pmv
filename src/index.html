@@ -24,7 +24,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <img src="./assets/logo.svg" alt="" class="header-logo" />
+      <a href="/src/index.html"><img src="/src/assets/logo.svg" alt="" class="header-logo"/></a>
       <div class="search-bar">
         <form action="#">
           <input
@@ -48,12 +48,30 @@
             <span>Albums</span>
           </div>
         </a>
-        <a href="./pages/login.html" id="headerLoginBtn">
+        <a href="/src/pages/perfil.html" id="perfil">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu perfil</span>
+          </div>
+        </a>
+        <a href="http://localhost:5500/src/index.html" id="leaveBtn">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Sair</span>
+          </div>
+        </a>
+        <a href="/src/pages/login.html" id="login">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Entrar</span>
+          </div>
+        </a>
+        <!-- <a href="./pages/login.html" id="headerLoginBtn">
           <div class="header-menu-option">
             <i class="fa-solid fa-user"></i>
             <span id="headerLoginBtnTitle">Entrar</span>
           </div>
-        </a>
+        </a> -->
         <div class="header-menu-collapsed" id="menu">
           <i class="fa-solid fa-bars fa-lg"></i>
         </div>
@@ -307,12 +325,30 @@
             <span>Albums</span>
           </div>
         </a>
-        <a href="/src/pages/login.html">
+        <a href="/src/pages/perfil.html" id="perfil2">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Meu perfil</span>
+          </div>
+        </a>
+        <a href="http://localhost:5500/src/index.html" id="leaveBtn2">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Sair</span>
+          </div>
+        </a>
+        <!-- <a href="/src/pages/login.html" id="login2">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Entrar</span>
+          </div>
+        </a> -->
+        <!-- <a href="/src/pages/login.html">
           <div>
             <i class="fa-solid fa-user"></i>
             <span>Meu Perfil</span>
           </div>
-        </a>
+        </a> -->
         <div id="closeOverlayBtn">
           <i class="fa-solid fa-circle-xmark"></i>
         </div>
@@ -358,6 +394,8 @@
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
+  <script src="/src/scripts/sair.js"></script>
+  <script src="/src/scripts/login.js"></script>
   <script type="text/javascript" src="./scripts/private.js"></script>
   <script type="text/javascript" src="./scripts/carousel.js"></script>
 </html>

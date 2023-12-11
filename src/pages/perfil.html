@@ -25,7 +25,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <img src="/src/assets/logo.svg" alt="" class="header-logo" />
+      <a href="/src/index.html"><img src="/src/assets/logo.svg" alt="" class="header-logo"/></a>
       <div class="search-bar">
         <form action="#">
           <input
@@ -40,19 +40,31 @@
         <a href="#movies">
           <div class="header-menu-option">
             <i class="fa-solid fa-video"></i>
-            <span>Filmes/Séries</span>
+            <span>Filmes/Séries favoritos</span>
           </div>
         </a>
         <a href="#albuns">
           <div class="header-menu-option">
             <i class="fa-solid fa-music"></i>
-            <span>Albums</span>
+            <span>Albums favoritos</span>
           </div>
+          <a href="/src/pages/perfil.html" id="perfil">
+            <div class="header-menu-option">
+              <i class="fa-solid fa-user"></i>
+              <span>Meu perfil</span>
+            </div>
+          </a>
         </a>
-        <a id="leaveBtn">
+        <a href="http://localhost:5500/src/index.html" id="leaveBtn">
           <div class="header-menu-option">
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
             <span>Sair</span>
+          </div>
+        </a>
+        <a href="/src/pages/login.html" id="login">
+          <div class="header-menu-option">
+            <i class="fa-solid fa-user"></i>
+            <span>Entrar</span>
           </div>
         </a>
         <div class="header-menu-collapsed" id="menu">
@@ -62,6 +74,10 @@
     </header>
     <div class="wrapper">
       <!-- HEADER -->
+      <section class="main">
+        <div class="main-background"></div>
+        <div class="main-gradient"></div>
+      </section>
       <!-- SIGN UP -->
       <section id="usuario-perfil" class="sign-up-wrapper">
         <img
@@ -104,34 +120,22 @@
           <i class="fa-solid fa-bars fa-lg"></i>
         </div>
         <div class="overlay-content">
-          <a href="./logado.html">
-            <div class="header-menu-option">
-              <i class="fa-solid"></i>
-              <span>Home</span>
-            </div>
-          </a>
-          <a href="" id="nome6">
-            <div>
-              <i class="fa-solid"></i>
-              <span>NomeUsuario</span>
-            </div>
-          </a>
           <a href="#movies" id="overlayMoviesBtn">
             <div>
               <i class="fa-solid fa-video"></i>
-              <span>Filmes/Séries</span>
+              <span>Filmes/Séries favoritos</span>
             </div>
           </a>
           <a href="#albuns" id="overlayAlbumsBtn">
             <div>
               <i class="fa-solid fa-music"></i>
-              <span>Albums</span>
+              <span>Albums favoritos</span>
             </div>
           </a>
-          <a href="/src/index.html">
-            <div>
-              <i class="fa-solid"></i>
-              <span id="nome" onclick="logout()">Sair</span>
+          <a href="http://localhost:5500/src/index.html" id="leaveBtn2">
+            <div class="header-menu-option">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Sair</span>
             </div>
           </a>
           <div id="closeOverlayBtn">
@@ -180,7 +184,7 @@
     overlayMoviesBtn.addEventListener("click", handleActiveOverlay);
     overlayAlbumsBtn.addEventListener("click", handleActiveOverlay);
   </script>
-  <script src="../scripts/sair.js"></script>
+  <script src="/src/scripts/sair.js"></script>
   <script src="../scripts/perfil.js"></script>
   <script src="../scripts/favorites.js"></script>
 </html>

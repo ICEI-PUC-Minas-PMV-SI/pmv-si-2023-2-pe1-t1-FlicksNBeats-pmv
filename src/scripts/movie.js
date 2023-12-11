@@ -1,5 +1,7 @@
 const movieId = localStorage.getItem("selectedMovieId");
 const token = localStorage.getItem("access_token");
+leaveBtn.style.display = '';
+perfiljs.style.display = '';
 
 const movieToken = "";
 

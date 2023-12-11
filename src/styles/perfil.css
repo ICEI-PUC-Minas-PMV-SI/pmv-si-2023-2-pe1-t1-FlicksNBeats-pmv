@@ -28,9 +28,9 @@
   padding-top: 10px;
 }
 
-.wrapper {
+/* .wrapper {
   padding: 48px 20px 0px 20px;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .main-background {
